@@ -303,7 +303,7 @@ source_type: article | paper | book | course | transcript | dataset | experiment
 
 ## Git Rules
 
-- 本知识库已启用 Git，仓库根目录是 `AI-Master/`，默认分支为 `main`。
+- 本知识库已启用 Git，仓库根目录是 `AI-Master/`，默认分支为 `master`。
 - Git 配置：`core.autocrlf=input`，`core.safecrlf=warn`。
 - 大规模结构调整、导入、整理后可执行 `git add` 和 `git commit`。
 - 不主动 `git push`，除非用户明确要求。

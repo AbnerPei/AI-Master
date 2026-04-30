@@ -5,6 +5,12 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-04-30] update | 配置 GitHub 远程仓库并推送 master
+- Remote: `origin` -> `git@github.com:AbnerPei/AI-Master.git`
+- Branch: 本地分支从 `main` 重命名为 `master`，并设置跟踪 `origin/master`。
+- Push: 已执行 `git push -u origin master`。
+- Updated: `SCHEMA.md`，将 Git 默认分支记录更新为 `master`。
+
 ## [2026-04-30] update | 用户更新 AI 大神与 Hermes Agent raw 资料
 - Updated raw files: `raw/AI 大神/AI 大神 - Andrej Karpathy.md`，`raw/Hermes Agent/Hermes Agent教程/Hermes Agent教程 - 接入微信.md`
 - Updated: `raw/source-manifest.md`，刷新文件大小、行数和 SHA-256。
