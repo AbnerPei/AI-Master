@@ -1,7 +1,7 @@
 # Source Manifest
 
 > AI 大师知识库 raw 层来源清单。
-> Last updated: 2026-04-30
+> Last updated: 2026-05-01
 
 ## Current Raw Layout
 
@@ -47,9 +47,9 @@
 - Target: `raw/A_AI-Content-Creator(AI 创作者)/`
 - Asset target: `raw/A_Assets(素材)/A_Avatar/`
 - Imported/recorded: 2026-04-30
-- Last checked: 2026-04-30
-- Files: 1 Markdown file + 1 PNG asset。
-- Notes: 当前仅记录 raw 文件与素材，不改写原始内容；其中包含“第四种黑猩猩CHIMP”的简介、B站链接与头像引用。
+- Last checked: 2026-05-01
+- Files: 4 Markdown files + 1 PNG asset。
+- Notes: 当前仅记录 raw 文件与素材，不改写原始内容；包含“第四种黑猩猩CHIMP”、`code秘密花园`、`慢学AI`、`堂吉诃德拉曼查的英豪` 等 B 站 AI 创作者资料。已将误生成的 `raw/A_AI-Content-Creator(AI创作者)/` 归并到规范路径 `raw/A_AI-Content-Creator(AI 创作者)/`。
 
 ### 用户手动导入 | Hermes Agent
 
@@ -94,7 +94,10 @@
 |---|---:|---:|---|
 | `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md` | 316 | 12 | `2b7f19df9245ebd514632963b67a7a7a121d6de5c64ea0731efd4edf3fd372c6` |
 | `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/LLM Wiki 详解.md` | 12625 | 274 | `da22c1753f6b2d722d8101b819f2796537e9ba545fa98d8b34350d5590cf3a17` |
-| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 第四种黑猩猩CHIMP.md` | 553 | 17 | `f1df43f1428de9fa59a8581c3eecfaefaafd104cb0c6b695114a2abe3b095525` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - code秘密花园.md` | 440 | 17 | `3b5c82282f1a6b0af9758bd89ee391504a1e72d5f3426b3611f04a9430f16460` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 堂吉诃德拉曼查的英豪.md` | 423 | 17 | `f6fbaa8b3bdf48cb47a06a1fb440e2439e271bfdd09b1437d10c468246930e3d` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 慢学AI.md` | 571 | 17 | `e133677b4ed23904b4d77ebb4e7614cbf891508e35111b246e5bc622dc61bc91` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 第四种黑猩猩CHIMP.md` | 593 | 17 | `e334621aed67c3ad44440a39e172b36fd3976fd33661b2e5898a3c6373560ccf` |
 | `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md` | 903 | 23 | `f6ecdd47d63dd52ae187c456dbc9485861a7541dbfeb06efb1f3565f7b89271e` |
 | `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md` | 8140 | 81 | `f3d1e1e9ba4dbdc292b5bc57ae58252d1e637184686db40cfb0b8a155c3f361f` |
 | `raw/A_Articles(文章)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |

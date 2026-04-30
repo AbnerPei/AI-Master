@@ -11,6 +11,19 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-01] update | 吸收新增 B站 AI 创作者资料并规范目录
+- Added raw files: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - code秘密花园.md`、`raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 慢学AI.md`、`raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 堂吉诃德拉曼查的英豪.md`。
+- Updated raw file: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 第四种黑猩猩CHIMP.md`，按用户改动恢复为 B 站头像 URL 引用。
+- Created wiki page: `wiki/P_Playbooks(操作手册)/B站 AI 创作者技能快速导入.md`，并更新 `wiki/index.md`。
+- Normalized directory: 将误生成的 `raw/A_AI-Content-Creator(AI创作者)/` 文件归并到规范目录 `raw/A_AI-Content-Creator(AI 创作者)/`。
+- Updated: `raw/source-manifest.md`，刷新 raw Markdown 与素材 SHA-256、大小和行数。
+- Note: 本次按用户要求吸收改动、提交并 push。
+
+## [2026-05-01] create | B站 AI 创作者技能快速导入操作手册
+- Created wiki page: `wiki/P_Playbooks(操作手册)/B站 AI 创作者技能快速导入.md`
+- Purpose: 记录 `ai-creator-info` 与 `bilibili-up-info` 两个 skill 的软链接恢复、依赖安装、JSON 查询和 md 生成流程。
+- Updated: `wiki/index.md`
+
 ## [2026-04-30] update | 配置 GitHub 远程仓库并推送 master
 - Remote: `origin` -> `git@github.com:AbnerPei/AI-Master.git`
 - Branch: 本地分支从 `main` 重命名为 `master`，并设置跟踪 `origin/master`。

@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 6
+> Last updated: 2026-05-01 | Total pages: 7
 
 ## Entities
 
@@ -26,6 +26,7 @@
 
 ## Playbooks
 
+- [[B站 AI 创作者技能快速导入]] — 恢复 `ai-creator-info` 与 `bilibili-up-info` 两个 skill 的软链接、依赖和 JSON 到 md 的标准流程。
 - [[Hermes Agent 接入微信]] — Hermes Agent 微信接入资料入口，后续补全配置步骤、验证和排障。
 
 ## Projects
