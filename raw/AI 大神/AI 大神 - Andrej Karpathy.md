@@ -16,3 +16,6 @@ tags:
 - [**X**](https://x.com/karpathy)
 - [**karpathy.ai**](https://karpathy.ai/)  `个人博客`
 - [**YouTube**](https://www.youtube.com/@AndrejKarpathy)
+
+### 内容
+- [**LLM Knowledge Bases**](https://x.com/karpathy/status/2039805659525644595?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E2039805659525644595%7Ctwgr%5E6c4204f9b9d471f12fd38cfe5745702164eae4e8%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Furl%3Dhttps%3A%2F%2Ftwitter.com%2Fkarpathy%2Fstatus%2F2039805659525644595)

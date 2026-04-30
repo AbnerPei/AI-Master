@@ -30,14 +30,16 @@
 - Source type: 用户手动导入的本地 Markdown 目录。
 - Target: `raw/AI 大神/`
 - Imported/recorded: 2026-04-30
+- Last checked: 2026-04-30
 - Files: 1 Markdown file。
-- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Andrej Karpathy 简介与平台链接。
+- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Andrej Karpathy 简介、平台链接与内容链接。
 
 ### 用户手动导入 | Hermes Agent
 
 - Source type: 用户手动导入的本地 Markdown 目录。
 - Target: `raw/Hermes Agent/`
 - Imported/recorded: 2026-04-30
+- Last checked: 2026-04-30
 - Files: 1 Markdown file。
 - Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Hermes Agent 接入微信相关参考链接。
 
@@ -45,5 +47,5 @@
 
 | Path | Size bytes | Lines | SHA-256 |
 |---|---:|---:|---|
-| `raw/AI 大神/AI 大神 - Andrej Karpathy.md` | 484 | 18 | `dc855da9d6a41c258da4d9233ec03d454ad80b5cc19c2133747c32de93e43f65` |
-| `raw/Hermes Agent/Hermes Agent教程/Hermes Agent教程 - 接入微信.md` | 318 | 12 | `84b3ba20f250fbb3f59b007ab130f3c4476c79485c54d116c6f50402291e5b98` |
+| `raw/AI 大神/AI 大神 - Andrej Karpathy.md` | 836 | 21 | `b0d609d36a954286867cc539ce45d9a5b55d71e1a8adee41d8329c588efbb3ec` |
+| `raw/Hermes Agent/Hermes Agent教程/Hermes Agent教程 - 接入微信.md` | 316 | 12 | `2b7f19df9245ebd514632963b67a7a7a121d6de5c64ea0731efd4edf3fd372c6` |

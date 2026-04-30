@@ -5,6 +5,11 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-04-30] update | 用户更新 AI 大神与 Hermes Agent raw 资料
+- Updated raw files: `raw/AI 大神/AI 大神 - Andrej Karpathy.md`，`raw/Hermes Agent/Hermes Agent教程/Hermes Agent教程 - 接入微信.md`
+- Updated: `raw/source-manifest.md`，刷新文件大小、行数和 SHA-256。
+- Note: 用户直接修改 raw 文件；本次仅同步 manifest 并提交，不改写整理层 wiki 页面。
+
 ## [2026-04-30] ingest | 用户导入 AI 大神与 Hermes Agent 两个 raw 目录
 - Raw directories: `raw/AI 大神/`，`raw/Hermes Agent/`
 - Raw Markdown files: 2

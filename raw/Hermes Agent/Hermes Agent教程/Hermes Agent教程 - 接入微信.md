@@ -1,6 +1,6 @@
 ---
 创建日期: 2026-04-27T10:41:00
-category:
+分类:
   - AI
   - Hermes Agent
   - Hermes Agent教程
