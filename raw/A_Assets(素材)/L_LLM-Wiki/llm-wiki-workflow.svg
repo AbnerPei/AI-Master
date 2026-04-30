@@ -19,16 +19,17 @@
     <style>
       .title{font:700 54px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#14213d}
       .subtitle{font:400 25px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#536079}
-      .h{font:700 31px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#14213d}
-      .p{font:500 22px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#536079}
-      .small{font:500 18px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#6b7390}
-      .code{font:600 19px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#4e5bd5}
+      .h{font:700 30px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#14213d;text-anchor:middle}
+      .p{font:500 22px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#536079;text-anchor:middle}
+      .small{font:500 18px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#6b7390;text-anchor:middle}
+      .code{font:600 19px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#4e5bd5;text-anchor:middle}
       .arrow{stroke:#5b6ee1;stroke-width:6;fill:none;marker-end:url(#arrow);stroke-linecap:round}
       .dash{stroke:#9a7bff;stroke-width:4;stroke-dasharray:10 12;fill:none;marker-end:url(#arrow);stroke-linecap:round}
       .node{fill:#ffffff;stroke:#6e7cff;stroke-width:4}
       .link{stroke:#9aa6ff;stroke-width:3;fill:none;opacity:.8}
     </style>
   </defs>
+
   <rect width="1600" height="900" fill="url(#bg)"/>
   <circle cx="1400" cy="140" r="150" fill="#dfe7ff" opacity="0.65"/>
   <circle cx="160" cy="760" r="180" fill="#efe4ff" opacity="0.7"/>
@@ -36,12 +37,13 @@
   <text x="100" y="105" class="title">LLM Wiki：把资料编译成会复利的知识库</text>
   <text x="104" y="150" class="subtitle">Raw sources → LLM Agent → Interlinked Markdown Wiki → Answers / Writing / Lint</text>
 
+  <!-- Four equal-sized workflow items: x gap = 80, card size = 300 x 370 -->
   <g filter="url(#shadow)">
-    <rect x="95" y="240" width="275" height="350" rx="32" fill="url(#card)"/>
-    <text x="135" y="300" class="h">1. Raw Sources</text>
-    <text x="135" y="342" class="p">文章 / 论文 / 课程</text>
-    <text x="135" y="376" class="p">访谈 / 实验 / 笔记</text>
-    <g transform="translate(135 425)">
+    <rect x="80" y="230" width="300" height="370" rx="32" fill="url(#card)"/>
+    <text x="230" y="292" class="h">1. Raw Sources</text>
+    <text x="230" y="336" class="p">文章 / 论文 / 课程</text>
+    <text x="230" y="370" class="p">访谈 / 实验 / 笔记</text>
+    <g transform="translate(101 420)">
       <rect x="0" y="0" width="74" height="96" rx="10" fill="#eef3ff" stroke="#7f8cff" stroke-width="3"/>
       <rect x="92" y="18" width="74" height="96" rx="10" fill="#f5efff" stroke="#a084ff" stroke-width="3"/>
       <rect x="184" y="-8" width="74" height="96" rx="10" fill="#eefcf7" stroke="#52c7a6" stroke-width="3"/>
@@ -52,31 +54,31 @@
       <line x1="198" y1="16" x2="242" y2="16" stroke="#52c7a6" stroke-width="5"/>
       <line x1="198" y1="36" x2="242" y2="36" stroke="#52c7a6" stroke-width="5"/>
     </g>
-    <text x="135" y="560" class="code">raw/ + source-manifest.md</text>
+    <text x="230" y="563" class="code">raw/ + source-manifest.md</text>
   </g>
 
-  <path class="arrow" d="M395 415 C450 415 470 415 525 415"/>
+  <path class="arrow" d="M405 415 C430 415 435 415 455 415"/>
 
   <g filter="url(#shadow)">
-    <rect x="545" y="240" width="250" height="350" rx="32" fill="url(#card)"/>
-    <text x="588" y="300" class="h">2. LLM Agent</text>
-    <text x="588" y="342" class="p">阅读、抽取、归并</text>
-    <text x="588" y="376" class="p">去重、链接、标注冲突</text>
-    <circle cx="670" cy="467" r="76" fill="#eef3ff" stroke="#6e7cff" stroke-width="5"/>
-    <circle cx="646" cy="447" r="13" fill="#6e7cff"/>
-    <circle cx="694" cy="447" r="13" fill="#6e7cff"/>
-    <path d="M630 486 C655 512 686 512 711 486" fill="none" stroke="#6e7cff" stroke-width="7" stroke-linecap="round"/>
-    <text x="588" y="560" class="code">ingest / update / query</text>
+    <rect x="460" y="230" width="300" height="370" rx="32" fill="url(#card)"/>
+    <text x="610" y="292" class="h">2. LLM Agent</text>
+    <text x="610" y="336" class="p">阅读、抽取、归并</text>
+    <text x="610" y="370" class="p">去重、链接、标注冲突</text>
+    <circle cx="610" cy="468" r="76" fill="#eef3ff" stroke="#6e7cff" stroke-width="5"/>
+    <circle cx="586" cy="448" r="13" fill="#6e7cff"/>
+    <circle cx="634" cy="448" r="13" fill="#6e7cff"/>
+    <path d="M570 487 C595 513 626 513 651 487" fill="none" stroke="#6e7cff" stroke-width="7" stroke-linecap="round"/>
+    <text x="610" y="563" class="code">ingest / update / query</text>
   </g>
 
-  <path class="arrow" d="M820 415 C875 415 895 415 950 415"/>
+  <path class="arrow" d="M785 415 C810 415 815 415 835 415"/>
 
   <g filter="url(#shadow)">
-    <rect x="970" y="210" width="330" height="410" rx="32" fill="url(#card)"/>
-    <text x="1015" y="275" class="h">3. Wiki Layer</text>
-    <text x="1015" y="317" class="p">实体页 / 概念页 / 比较页</text>
-    <text x="1015" y="351" class="p">查询沉淀 / 操作手册</text>
-    <g transform="translate(1065 400)">
+    <rect x="840" y="230" width="300" height="370" rx="32" fill="url(#card)"/>
+    <text x="990" y="292" class="h">3. Wiki Layer</text>
+    <text x="990" y="336" class="p">实体页 / 概念页 / 比较页</text>
+    <text x="990" y="370" class="p">查询沉淀 / 操作手册</text>
+    <g transform="translate(910 393) scale(0.56)">
       <path class="link" d="M50 30 L150 70 L92 155 L220 145 L180 235 L52 210 Z"/>
       <circle class="node" cx="50" cy="30" r="22"/>
       <circle class="node" cx="150" cy="70" r="22"/>
@@ -85,22 +87,25 @@
       <circle class="node" cx="180" cy="235" r="22"/>
       <circle class="node" cx="52" cy="210" r="22"/>
     </g>
-    <text x="1015" y="590" class="code">wiki/index.md + [[links]]</text>
+    <text x="990" y="563" class="code">wiki/index.md + links</text>
   </g>
 
-  <path class="dash" d="M1135 645 C1035 795 640 805 235 620"/>
-  <path class="arrow" d="M1315 415 C1380 415 1400 415 1460 415"/>
+  <path class="arrow" d="M1165 415 C1190 415 1195 415 1215 415"/>
 
   <g filter="url(#shadow)">
-    <rect x="1340" y="255" width="190" height="320" rx="32" fill="url(#card)"/>
-    <text x="1378" y="315" class="h">4. Use</text>
-    <text x="1378" y="357" class="p">问答</text>
-    <text x="1378" y="392" class="p">写作</text>
-    <text x="1378" y="427" class="p">复盘</text>
-    <text x="1378" y="462" class="p">Lint</text>
-    <rect x="1380" y="500" width="110" height="40" rx="20" fill="#6e7cff"/>
-    <text x="1407" y="527" style="font:700 19px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:white">复利</text>
+    <rect x="1220" y="230" width="300" height="370" rx="32" fill="url(#card)"/>
+    <text x="1370" y="292" class="h">4. Use</text>
+    <text x="1370" y="342" class="p">问答</text>
+    <text x="1370" y="377" class="p">写作</text>
+    <text x="1370" y="412" class="p">复盘</text>
+    <text x="1370" y="447" class="p">Lint</text>
+    <rect x="1315" y="501" width="110" height="42" rx="21" fill="#6e7cff"/>
+    <text x="1370" y="528" style="font:700 19px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:white;text-anchor:middle">复利</text>
   </g>
 
-  <text x="325" y="760" class="small">关键差异：RAG 是每次从原料重做菜；LLM Wiki 是先把知识编译成可维护的“代码库”。</text>
+  <!-- Feedback loop stays above the footer sentence to avoid overlap. -->
+  <path class="dash" d="M990 635 C880 705 610 715 270 650"/>
+
+  <rect x="238" y="780" width="1124" height="48" rx="24" fill="#ffffff" opacity="0.78"/>
+  <text x="800" y="811" class="small">关键差异：RAG 是每次从原料重做菜；LLM Wiki 是先把知识编译成可维护的“代码库”。</text>
 </svg>

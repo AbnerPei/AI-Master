@@ -12,6 +12,7 @@
 
 # Obsidian local state / cache
 .obsidian/workspace*.json
+.obsidian/graph.json
 .obsidian/cache/
 .obsidian/plugins/*/data.json
 .trash/

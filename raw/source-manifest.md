@@ -15,7 +15,7 @@
 - `raw/E_Experiments(实验)/`：实验原始记录、日志、结果导出。
 - `raw/P_Prompts(提示词)/`：Prompt 原始版本、对话样本、提示词实验。
 - `raw/A_Assets(素材)/`：图片、截图、图表、页面渲染图、附件。
-  - `raw/A_Assets(素材)/L_LLM-Wiki/`：LLM Wiki 介绍与方法论文档配图，当前包含 `llm-wiki-workflow.svg`（6176 bytes）。
+  - `raw/A_Assets(素材)/L_LLM-Wiki/`：LLM Wiki 介绍与方法论文档配图，当前包含 `llm-wiki-workflow.svg`（6516 bytes）。
 - `raw/A_AI-Gurus(AI大神)/`：用户导入的 AI 人物/专家资料。
 - `raw/A_AI-Agent-Tech-Stack/`：AI Agent 技术栈资料；Agent 相关英文术语目录保留英文原名，不加中文括注。
   - `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/`：Hermes Agent 学习与教程资料。
@@ -74,7 +74,7 @@
 - Imported/recorded: 2026-04-30
 - Last checked: 2026-04-30
 - Files: 1 Markdown file + 1 SVG asset。
-- Notes: 文档系统解释 LLM Wiki 的定义、RAG 差异、raw/wiki/schema 分层、ingest/query/lint 工作流、页面设计原则和 AI-Master 落地方式。
+- Notes: 文档系统解释 LLM Wiki 的定义、RAG 差异、raw/wiki/schema 分层、ingest/query/lint 工作流、页面设计原则和 AI-Master 落地方式；SVG 已调整为四个等宽等高 item、居中文案与避让反馈箭头。
 
 ## File Paths
 

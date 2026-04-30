@@ -64,3 +64,9 @@
 - Created wiki page: `wiki/C_Concepts(概念)/LLM Wiki.md`
 - Updated: `SCHEMA.md`、`raw/source-manifest.md`、`wiki/index.md`、`wiki/M_Meta(元信息)/AI 资源索引.md`、Hermes Agent 相关 wiki 页面来源路径。
 - Notes: 图像生成服务缺少 `FAL_KEY`，改为生成可版本管理的本地 SVG 配图；未 push。
+
+## [2026-04-30] update | 修复 LLM Wiki 工作流 SVG 版式
+- Updated asset: `raw/A_Assets(素材)/L_LLM-Wiki/llm-wiki-workflow.svg`
+- Changes: 四个 workflow item 统一为等宽等高卡片；前 3 个 item 底部说明文字改为居中；底部说明文字下移并加浅色底板，反馈箭头上移，避免重合。
+- Updated: `raw/source-manifest.md` 记录 SVG 文件大小与版式修复说明；`.gitignore` 忽略 Obsidian graph 本地状态。
+- Notes: 未 push。
