@@ -16,7 +16,9 @@
 - `raw/P_Prompts(提示词)/`：Prompt 原始版本、对话样本、提示词实验。
 - `raw/A_Assets(素材)/`：图片、截图、图表、页面渲染图、附件。
   - `raw/A_Assets(素材)/L_LLM-Wiki/`：LLM Wiki 介绍与方法论文档配图，当前包含 `llm-wiki-workflow.svg`（6516 bytes）。
+  - `raw/A_Assets(素材)/A_Avatar/`：人物、创作者、账号等头像图片素材。
 - `raw/A_AI-Gurus(AI大神)/`：用户导入的 AI 人物/专家资料。
+- `raw/A_AI-Content-Creator(AI 创作者)/`：用户导入的 AI 内容创作者、频道、博主等资料。
 - `raw/A_AI-Agent-Tech-Stack/`：AI Agent 技术栈资料；Agent 相关英文术语目录保留英文原名，不加中文括注。
   - `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/`：Hermes Agent 学习与教程资料。
   - `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/`：LLM Wiki 方法论、教程、参考资料和本知识库实践说明。
@@ -37,7 +39,17 @@
 - Imported/recorded: 2026-04-30
 - Last checked: 2026-04-30
 - Files: 1 Markdown file。
-- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Andrej Karpathy 简介、平台链接与内容链接。
+- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Andrej Karpathy 简介、平台链接与内容链接。本次用户补充了 `AI 创作者` 分类与头像 URL 元数据。
+
+### 用户手动导入 | AI 创作者
+
+- Source type: 用户手动导入的本地 Markdown 目录与头像素材。
+- Target: `raw/A_AI-Content-Creator(AI 创作者)/`
+- Asset target: `raw/A_Assets(素材)/A_Avatar/`
+- Imported/recorded: 2026-04-30
+- Last checked: 2026-04-30
+- Files: 1 Markdown file + 1 PNG asset。
+- Notes: 当前仅记录 raw 文件与素材，不改写原始内容；其中包含“第四种黑猩猩CHIMP”的简介、B站链接与头像引用。
 
 ### 用户手动导入 | Hermes Agent
 
@@ -82,14 +94,22 @@
 |---|---:|---:|---|
 | `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md` | 316 | 12 | `2b7f19df9245ebd514632963b67a7a7a121d6de5c64ea0731efd4edf3fd372c6` |
 | `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/LLM Wiki 详解.md` | 12625 | 274 | `da22c1753f6b2d722d8101b819f2796537e9ba545fa98d8b34350d5590cf3a17` |
-| `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md` | 836 | 21 | `b0d609d36a954286867cc539ce45d9a5b55d71e1a8adee41d8329c588efbb3ec` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 第四种黑猩猩CHIMP.md` | 553 | 17 | `f1df43f1428de9fa59a8581c3eecfaefaafd104cb0c6b695114a2abe3b095525` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md` | 903 | 23 | `f6ecdd47d63dd52ae187c456dbc9485861a7541dbfeb06efb1f3565f7b89271e` |
 | `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md` | 8140 | 81 | `f3d1e1e9ba4dbdc292b5bc57ae58252d1e637184686db40cfb0b8a155c3f361f` |
-| `raw/A_Articles(文章)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| `raw/A_Assets(素材)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| `raw/B_Books(书籍)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| `raw/C_Courses(课程)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| `raw/D_Datasets(数据集)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| `raw/E_Experiments(实验)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| `raw/P_Papers(论文)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| `raw/P_Prompts(提示词)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
-| `raw/T_Transcripts(转录)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/A_Articles(文章)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/A_Assets(素材)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/B_Books(书籍)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/C_Courses(课程)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/D_Datasets(数据集)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/E_Experiments(实验)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/P_Papers(论文)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/P_Prompts(提示词)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/T_Transcripts(转录)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+
+## Asset Paths
+
+| Path | Size bytes | SHA-256 |
+|---|---:|---|
+| `raw/A_Assets(素材)/A_Avatar/B站_第四种黑猩猩CHIMP.png` | 164695 | `5e5d1b69d62baff1262f521ab2333d14e5d127732d4b817112e6304a852bca51` |
+| `raw/A_Assets(素材)/L_LLM-Wiki/llm-wiki-workflow.svg` | 6516 | `44e7e2124d0c88dfe14b7b7026e81ec19aa1580b5bdfa877abded21195a3799f` |

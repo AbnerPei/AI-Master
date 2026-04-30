@@ -16,6 +16,7 @@
 AI-Master/
   README.md              # 极简入口说明
   SCHEMA.md              # 本文件：结构、标签、写作、raw、Obsidian 规则
+  DB/                    # Obsidian Bases：用于卡片视图、资料库筛选和导航
   wiki/                  # 整理层 / 综合层
     index.md
     log.md
@@ -33,8 +34,10 @@ AI-Master/
   raw/                   # 原始资料层，原则上只读、不可随意改写
     source-manifest.md
     A_AI-Gurus(AI大神)/
+    A_AI-Content-Creator(AI 创作者)/
     A_Articles(文章)/
     A_Assets(素材)/
+      A_Avatar/
     B_Books(书籍)/
     C_Courses(课程)/
     D_Datasets(数据集)/

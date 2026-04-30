@@ -70,3 +70,11 @@
 - Changes: 四个 workflow item 统一为等宽等高卡片；前 3 个 item 底部说明文字改为居中；底部说明文字下移并加浅色底板，反馈箭头上移，避免重合。
 - Updated: `raw/source-manifest.md` 记录 SVG 文件大小与版式修复说明；`.gitignore` 忽略 Obsidian graph 本地状态。
 - Notes: 未 push。
+
+## [2026-04-30] update | 记录用户新增 AI 创作者资料与 Obsidian 配置
+- Updated raw file: `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md`，补充 `AI 创作者` 分类与头像 URL。
+- Added raw directory: `raw/A_AI-Content-Creator(AI 创作者)/`，新增 `AI 创作者 - 第四种黑猩猩CHIMP.md`。
+- Added asset directory: `raw/A_Assets(素材)/A_Avatar/`，新增 `B站_第四种黑猩猩CHIMP.png`。
+- Added Obsidian/Bases files: `DB/DB_AI 创作者.base`、`DB/DB_AI 大神.base`、`.obsidian/bookmarks.json`、`.obsidian/types.json`、`.obsidian/themes/Maple/`；`.obsidian/appearance.json` 切换到 Maple theme。
+- Updated: `SCHEMA.md`、`raw/source-manifest.md`。
+- Note: 本次按用户要求知晓并提交新增目录/文件；仅修正新增 AI 创作者 raw 文档中的头像相对路径；空白根目录 `未命名.md` 无知识内容，未纳入提交；未 push。

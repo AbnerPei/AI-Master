@@ -1,0 +1,19 @@
+filters:
+  or:
+    - 分类.contains("AI 大神")
+    - file.name.startsWith("AI 创作者")
+views:
+  - type: cards
+    name: AI 创作者
+    groupBy:
+      property: 星级
+      direction: DESC
+    order:
+      - file.basename
+      - file.ctime
+      - tags
+    sort:
+      - property: 创建日期
+        direction: DESC
+    cardSize: 200
+    image: note.author_url

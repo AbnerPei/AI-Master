@@ -1,0 +1,13 @@
+filters:
+  or:
+    - file.name.startsWith("AI 大神")
+views:
+  - type: cards
+    name: AI 大神
+    order:
+      - file.name
+      - file.ctime
+      - tags
+    cardSize: 250
+    image: note.author_url
+    imageAspectRatio: 1
