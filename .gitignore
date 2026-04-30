@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor / IDE local state
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Obsidian local state / cache
+.obsidian/workspace*.json
+.obsidian/cache/
+.obsidian/plugins/*/data.json
+.trash/
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Python / tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / package caches
+node_modules/
+.npm/
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
