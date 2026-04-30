@@ -5,17 +5,17 @@
 
 ## Current Raw Layout
 
-- `raw/articles/`：网页文章、博客、新闻、官方文档摘录。
-- `raw/papers/`：论文、技术报告、arXiv/PDF/OCR 派生材料。
-- `raw/books/`：书籍摘录、读书原始笔记、章节材料。
-- `raw/courses/`：课程材料、课件、课程字幕、作业资料。
-- `raw/transcripts/`：访谈、播客、会议、视频字幕。
-- `raw/datasets/`：数据集说明、样例、数据字典。
-- `raw/experiments/`：实验原始记录、日志、结果导出。
-- `raw/prompts/`：Prompt 原始版本、对话样本、提示词实验。
-- `raw/assets/`：图片、截图、图表、页面渲染图、附件。
-- `raw/AI 大神/`：用户导入的 AI 人物/专家资料。
-- `raw/Hermes Agent/`：用户导入的 Hermes Agent 学习与教程资料。
+- `raw/A_Articles(文章)/`：网页文章、博客、新闻、官方文档摘录。
+- `raw/P_Papers(论文)/`：论文、技术报告、arXiv/PDF/OCR 派生材料。
+- `raw/B_Books(书籍)/`：书籍摘录、读书原始笔记、章节材料。
+- `raw/C_Courses(课程)/`：课程材料、课件、课程字幕、作业资料。
+- `raw/T_Transcripts(转录)/`：访谈、播客、会议、视频字幕。
+- `raw/D_Datasets(数据集)/`：数据集说明、样例、数据字典。
+- `raw/E_Experiments(实验)/`：实验原始记录、日志、结果导出。
+- `raw/P_Prompts(提示词)/`：Prompt 原始版本、对话样本、提示词实验。
+- `raw/A_Assets(素材)/`：图片、截图、图表、页面渲染图、附件。
+- `raw/A_AI-Gurus(AI大神)/`：用户导入的 AI 人物/专家资料。
+- `raw/H_Hermes-Agent(Hermes智能体)/`：用户导入的 Hermes Agent 学习与教程资料。
 
 ## Placement Rules
 
@@ -28,7 +28,7 @@
 ### 用户手动导入 | AI 大神
 
 - Source type: 用户手动导入的本地 Markdown 目录。
-- Target: `raw/AI 大神/`
+- Target: `raw/A_AI-Gurus(AI大神)/`
 - Imported/recorded: 2026-04-30
 - Last checked: 2026-04-30
 - Files: 1 Markdown file。
@@ -37,7 +37,7 @@
 ### 用户手动导入 | Hermes Agent
 
 - Source type: 用户手动导入的本地 Markdown 目录。
-- Target: `raw/Hermes Agent/`
+- Target: `raw/H_Hermes-Agent(Hermes智能体)/`
 - Imported/recorded: 2026-04-30
 - Last checked: 2026-04-30
 - Files: 1 Markdown file。
@@ -47,5 +47,5 @@
 
 | Path | Size bytes | Lines | SHA-256 |
 |---|---:|---:|---|
-| `raw/AI 大神/AI 大神 - Andrej Karpathy.md` | 836 | 21 | `b0d609d36a954286867cc539ce45d9a5b55d71e1a8adee41d8329c588efbb3ec` |
-| `raw/Hermes Agent/Hermes Agent教程/Hermes Agent教程 - 接入微信.md` | 316 | 12 | `2b7f19df9245ebd514632963b67a7a7a121d6de5c64ea0731efd4edf3fd372c6` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md` | 836 | 21 | `b0d609d36a954286867cc539ce45d9a5b55d71e1a8adee41d8329c588efbb3ec` |
+| `raw/H_Hermes-Agent(Hermes智能体)/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md` | 316 | 12 | `2b7f19df9245ebd514632963b67a7a7a121d6de5c64ea0731efd4edf3fd372c6` |

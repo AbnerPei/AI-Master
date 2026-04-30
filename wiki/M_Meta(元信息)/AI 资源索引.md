@@ -4,7 +4,7 @@ created: 2026-04-30
 updated: 2026-04-30
 type: summary
 tags: [ai, source, summary]
-sources: [../raw/AI 大神/AI 大神 - Andrej Karpathy.md, ../raw/Hermes Agent/Hermes Agent教程/Hermes Agent教程 - 接入微信.md]
+sources: [../../raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md, ../../raw/H_Hermes-Agent(Hermes智能体)/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md]
 confidence: medium
 ---
 
@@ -23,9 +23,9 @@ confidence: medium
 
 | 类型 | 页面 | raw 来源 | 用途 |
 |---|---|---|---|
-| 人物 / 信息源 | [[Andrej Karpathy]] | `raw/AI 大神/AI 大神 - Andrej Karpathy.md` | 长期关注 AI 研究者、课程作者和公开输出 |
-| 工具 / Agent | [[Hermes Agent]] | `raw/Hermes Agent/Hermes Agent教程/Hermes Agent教程 - 接入微信.md` | 沉淀 Agent 工具使用、部署和自动化经验 |
-| 操作手册 | [[Hermes Agent 接入微信]] | `raw/Hermes Agent/Hermes Agent教程/Hermes Agent教程 - 接入微信.md` | 后续补全微信接入步骤和排障 |
+| 人物 / 信息源 | [[Andrej Karpathy]] | `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md` | 长期关注 AI 研究者、课程作者和公开输出 |
+| 工具 / Agent | [[Hermes Agent]] | `raw/H_Hermes-Agent(Hermes智能体)/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md` | 沉淀 Agent 工具使用、部署和自动化经验 |
+| 操作手册 | [[Hermes Agent 接入微信]] | `raw/H_Hermes-Agent(Hermes智能体)/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md` | 后续补全微信接入步骤和排障 |
 
 ## 后续扩展
 

@@ -19,28 +19,31 @@ AI-Master/
   wiki/                  # 整理层 / 综合层
     index.md
     log.md
-    entities/
-    concepts/
-    comparisons/
-    queries/
-    learning-notes/
-    experience/
-    opinions/
-    playbooks/
-    projects/
-    templates/
-    _meta/
+    E_Entities(实体)/
+    C_Concepts(概念)/
+    C_Comparisons(比较)/
+    Q_Queries(查询)/
+    L_Learning-Notes(学习笔记)/
+    E_Experience(经验)/
+    O_Opinions(观点)/
+    P_Playbooks(操作手册)/
+    P_Projects(项目)/
+    T_Templates(模板)/
+    M_Meta(元信息)/
   raw/                   # 原始资料层，原则上只读、不可随意改写
     source-manifest.md
-    articles/
-    papers/
-    books/
-    courses/
-    transcripts/
-    datasets/
-    experiments/
-    prompts/
-    assets/
+    A_AI-Gurus(AI大神)/
+    A_Articles(文章)/
+    A_Assets(素材)/
+    B_Books(书籍)/
+    C_Courses(课程)/
+    D_Datasets(数据集)/
+    E_Experiments(实验)/
+    H_Hermes-Agent(Hermes智能体)/
+      T_Tutorials(教程)/
+    P_Papers(论文)/
+    P_Prompts(提示词)/
+    T_Transcripts(转录)/
 ```
 
 ## Layer Rules
@@ -48,14 +51,15 @@ AI-Master/
 - `raw/` 是原始资料层：保存外部来源、用户原始摘录、PDF/OCR/HTML 导入副本、实验原始输出等。除导入时生成清单/派生 Markdown 外，不随意改写原始来源内容。
 - `wiki/` 是整理层：由 AI 助手和用户共同维护，用于综合、抽象、交叉链接、形成可复用知识。
 - `SCHEMA.md` 与 `wiki/`、`raw/` 同级，约束整个知识库。
-- 从 `wiki/` 页面引用 raw 来源时使用相对路径：`../raw/...`。
+- 从 `wiki/` 子目录页面引用 raw 来源时使用相对路径：通常为 `../../raw/...`；从 `wiki/index.md`、`wiki/log.md` 等 wiki 根文件引用 raw 时使用 `../raw/...`。
 
 ## Naming Conventions
 
-- 中文知识、学习、经验、观点类页面优先使用中文文件名，例如 `wiki/concepts/注意力机制.md`。
+- 中文知识、学习、经验、观点类页面优先使用中文文件名，例如 `wiki/C_Concepts(概念)/注意力机制.md`。
 - 客观标识可保留英文、模型名、论文名、项目名、日期、版本号，例如 `GPT-4.md`、`Transformer.md`、`2026-04-30-agent实验.md`。
 - 不使用拼音简称或拼音全称来代替中文标题。
 - 每个 Markdown 页面文件名应稳定、可读、可长期引用。
+- `raw/` 和 `wiki/` 下的目录（含子目录）统一采用 `前缀_English(中文)` 格式，例如 `raw/B_Books(书籍)/`；前缀用于排序或分类，英文便于跨工具识别，中文括注便于 Obsidian 中阅读。
 
 ## Page Types
 
@@ -83,7 +87,7 @@ created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: entity | concept | comparison | query | learning-note | experience | opinion | playbook | project | template | summary
 tags: [taxonomy-tag]
-sources: [../raw/articles/source.md]
+sources: [../../raw/A_Articles(文章)/source.md]
 confidence: high | medium | low
 ---
 ```
@@ -285,14 +289,14 @@ source_type: article | paper | book | course | transcript | dataset | experiment
 - Templates
 - Meta
 
-当任一栏目超过 50 项时，按主题或首字母拆分；当总页面超过 200 个时，创建 `wiki/_meta/topic-map.md`。
+当任一栏目超过 50 项时，按主题或首字母拆分；当总页面超过 200 个时，创建 `wiki/M_Meta(元信息)/topic-map.md`。
 
 ## Raw Source Rules
 
 - 外部资料导入时，不移动、不删除原始来源目录；只复制到 `raw/` 或记录在 `raw/source-manifest.md`。
 - 本地 HTML/MHT/PDF/OCR 导入应保留原始资源副本，并在目标 raw 子目录生成可检索 Markdown 派生文档。
 - `raw/source-manifest.md` 记录来源、目标位置、统计、清单和注意事项。
-- `raw/assets/` 保存图片、截图、图表等资源；`wiki/` 页面引用图片时使用相对路径。
+- `raw/A_Assets(素材)/` 保存图片、截图、图表等资源；`wiki/` 页面引用图片时使用相对路径。
 
 ## Obsidian Rules
 

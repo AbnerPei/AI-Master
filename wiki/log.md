@@ -1,3 +1,9 @@
+## [2026-04-30] update | 统一 raw 与 wiki 目录命名
+- Rule: `raw/` 与 `wiki/` 下目录统一为 `前缀_English(中文)` 格式，例如 `raw/B_Books(书籍)/`。
+- Renamed raw directories: `A_AI-Gurus(AI大神)/`、`H_Hermes-Agent(Hermes智能体)/T_Tutorials(教程)/`、`A_Articles(文章)/`、`A_Assets(素材)/`、`B_Books(书籍)/`、`C_Courses(课程)/`、`D_Datasets(数据集)/`、`E_Experiments(实验)/`、`P_Papers(论文)/`、`P_Prompts(提示词)/`、`T_Transcripts(转录)/`。
+- Renamed wiki directories: `E_Entities(实体)/`、`C_Concepts(概念)/`、`C_Comparisons(比较)/`、`Q_Queries(查询)/`、`L_Learning-Notes(学习笔记)/`、`E_Experience(经验)/`、`O_Opinions(观点)/`、`P_Playbooks(操作手册)/`、`P_Projects(项目)/`、`T_Templates(模板)/`、`M_Meta(元信息)/`。
+- Updated: `SCHEMA.md`、`raw/source-manifest.md`、相关 wiki 页面中的 raw 来源路径。
+
 # AI 大师知识库 Log
 
 > Chronological record of all wiki actions. Append-only.
@@ -12,15 +18,15 @@
 - Updated: `SCHEMA.md`，将 Git 默认分支记录更新为 `master`。
 
 ## [2026-04-30] update | 用户更新 AI 大神与 Hermes Agent raw 资料
-- Updated raw files: `raw/AI 大神/AI 大神 - Andrej Karpathy.md`，`raw/Hermes Agent/Hermes Agent教程/Hermes Agent教程 - 接入微信.md`
+- Updated raw files: `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md`，`raw/H_Hermes-Agent(Hermes智能体)/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md`
 - Updated: `raw/source-manifest.md`，刷新文件大小、行数和 SHA-256。
 - Note: 用户直接修改 raw 文件；本次仅同步 manifest 并提交，不改写整理层 wiki 页面。
 
 ## [2026-04-30] ingest | 用户导入 AI 大神与 Hermes Agent 两个 raw 目录
-- Raw directories: `raw/AI 大神/`，`raw/Hermes Agent/`
+- Raw directories: `raw/A_AI-Gurus(AI大神)/`，`raw/H_Hermes-Agent(Hermes智能体)/`
 - Raw Markdown files: 2
 - Updated: `raw/source-manifest.md`
-- Created wiki pages: `wiki/entities/Andrej Karpathy.md`，`wiki/entities/Hermes Agent.md`，`wiki/playbooks/Hermes Agent 接入微信.md`，`wiki/_meta/AI 资源索引.md`
+- Created wiki pages: `wiki/E_Entities(实体)/Andrej Karpathy.md`，`wiki/E_Entities(实体)/Hermes Agent.md`，`wiki/P_Playbooks(操作手册)/Hermes Agent 接入微信.md`，`wiki/M_Meta(元信息)/AI 资源索引.md`
 - Updated: `wiki/index.md`
 - Updated: `SCHEMA.md`，在 tag taxonomy 中新增 `person`，用于 AI 人物/专家实体页。
 - Note: 未改写用户导入的 raw 文件，仅登记 manifest 并创建整理层页面。
