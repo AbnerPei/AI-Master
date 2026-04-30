@@ -14,17 +14,36 @@
 - `raw/experiments/`：实验原始记录、日志、结果导出。
 - `raw/prompts/`：Prompt 原始版本、对话样本、提示词实验。
 - `raw/assets/`：图片、截图、图表、页面渲染图、附件。
+- `raw/AI 大神/`：用户导入的 AI 人物/专家资料。
+- `raw/Hermes Agent/`：用户导入的 Hermes Agent 学习与教程资料。
 
 ## Placement Rules
 
 - 外部来源目录不移动、不删除；只复制到 `raw/` 或在本清单中记录来源。
-- 导入的 Markdown 派生文件应保留来源、导入日期和正文 sha256。
+- 导入的 Markdown 派生文件应保留来源、导入日期和正文 sha256；对用户已手动放入 `raw/` 的资料，本清单记录文件级 SHA-256，后续如需规范化 frontmatter，应先确认是否允许改写 raw。
 - `raw/` 中资料作为 provenance；综合结论写入 `wiki/`。
 
 ## Sources
 
-当前暂无已导入来源。
+### 用户手动导入 | AI 大神
+
+- Source type: 用户手动导入的本地 Markdown 目录。
+- Target: `raw/AI 大神/`
+- Imported/recorded: 2026-04-30
+- Files: 1 Markdown file。
+- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Andrej Karpathy 简介与平台链接。
+
+### 用户手动导入 | Hermes Agent
+
+- Source type: 用户手动导入的本地 Markdown 目录。
+- Target: `raw/Hermes Agent/`
+- Imported/recorded: 2026-04-30
+- Files: 1 Markdown file。
+- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Hermes Agent 接入微信相关参考链接。
 
 ## File Paths
 
-当前暂无 raw Markdown 来源文件。
+| Path | Size bytes | Lines | SHA-256 |
+|---|---:|---:|---|
+| `raw/AI 大神/AI 大神 - Andrej Karpathy.md` | 484 | 18 | `dc855da9d6a41c258da4d9233ec03d454ad80b5cc19c2133747c32de93e43f65` |
+| `raw/Hermes Agent/Hermes Agent教程/Hermes Agent教程 - 接入微信.md` | 318 | 12 | `84b3ba20f250fbb3f59b007ab130f3c4476c79485c54d116c6f50402291e5b98` |

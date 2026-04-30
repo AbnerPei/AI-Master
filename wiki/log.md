@@ -5,6 +5,15 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-04-30] ingest | 用户导入 AI 大神与 Hermes Agent 两个 raw 目录
+- Raw directories: `raw/AI 大神/`，`raw/Hermes Agent/`
+- Raw Markdown files: 2
+- Updated: `raw/source-manifest.md`
+- Created wiki pages: `wiki/entities/Andrej Karpathy.md`，`wiki/entities/Hermes Agent.md`，`wiki/playbooks/Hermes Agent 接入微信.md`，`wiki/_meta/AI 资源索引.md`
+- Updated: `wiki/index.md`
+- Updated: `SCHEMA.md`，在 tag taxonomy 中新增 `person`，用于 AI 人物/专家实体页。
+- Note: 未改写用户导入的 raw 文件，仅登记 manifest 并创建整理层页面。
+
 ## [2026-04-30] create | 引入 Git 版本管理
 - Repository root: `/Users/peijianbo/Documents/MeMe/AI-Master`
 - Branch: `main`

@@ -148,6 +148,7 @@ source_type: article | paper | book | course | transcript | dataset | experiment
 - `observability`
 
 ### 实体与行业
+- `person`
 - `model`
 - `paper`
 - `company`
