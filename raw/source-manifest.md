@@ -15,14 +15,18 @@
 - `raw/E_Experiments(实验)/`：实验原始记录、日志、结果导出。
 - `raw/P_Prompts(提示词)/`：Prompt 原始版本、对话样本、提示词实验。
 - `raw/A_Assets(素材)/`：图片、截图、图表、页面渲染图、附件。
+  - `raw/A_Assets(素材)/L_LLM-Wiki/`：LLM Wiki 介绍与方法论文档配图，当前包含 `llm-wiki-workflow.svg`（6176 bytes）。
 - `raw/A_AI-Gurus(AI大神)/`：用户导入的 AI 人物/专家资料。
-- `raw/H_Hermes-Agent(Hermes智能体)/`：用户导入的 Hermes Agent 学习与教程资料。
+- `raw/A_AI-Agent-Tech-Stack/`：AI Agent 技术栈资料；Agent 相关英文术语目录保留英文原名，不加中文括注。
+  - `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/`：Hermes Agent 学习与教程资料。
+  - `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/`：LLM Wiki 方法论、教程、参考资料和本知识库实践说明。
 
 ## Placement Rules
 
 - 外部来源目录不移动、不删除；只复制到 `raw/` 或在本清单中记录来源。
 - 导入的 Markdown 派生文件应保留来源、导入日期和正文 sha256；对用户已手动放入 `raw/` 的资料，本清单记录文件级 SHA-256，后续如需规范化 frontmatter，应先确认是否允许改写 raw。
 - `raw/` 中资料作为 provenance；综合结论写入 `wiki/`。
+- Agent 相关英文术语目录保持英文原名，例如 `A_AI-Agent-Tech-Stack`、`H_Hermes-Agent`、`L_LLM-Wiki`。
 
 ## Sources
 
@@ -38,11 +42,11 @@
 ### 用户手动导入 | Hermes Agent
 
 - Source type: 用户手动导入的本地 Markdown 目录。
-- Target: `raw/H_Hermes-Agent(Hermes智能体)/`
+- Target: `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/`
 - Imported/recorded: 2026-04-30
 - Last checked: 2026-04-30
 - Files: 1 Markdown file。
-- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Hermes Agent 接入微信相关参考链接。
+- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Hermes Agent 接入微信相关参考链接。已按 Agent 英文术语命名偏好放置在当前路径。
 
 ### X / Twitter | LLM Knowledge Bases
 
@@ -56,10 +60,36 @@
 - Files: 1 Markdown file。
 - Notes: 元数据保存在 YAML frontmatter；正文保留 Original Text、中文翻译和 Local Notes，避免重复 Source Metadata/Tags/Classification；正文 sha256 写入 raw frontmatter，文件级 SHA-256 写入下方清单。
 
+### 综合整理 | LLM Wiki 详解
+
+- Source type: 基于公开参考资料和 AI-Master 本地实践整理的 Markdown 方法论文档。
+- Reference URLs:
+  - https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+  - https://github.com/atomicmemory/llm-wiki-compiler
+  - https://help.obsidian.md/links
+  - https://help.obsidian.md/properties
+  - https://notes.andymatuschak.org/Evergreen_notes
+- Target: `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/LLM Wiki 详解.md`
+- Asset: `raw/A_Assets(素材)/L_LLM-Wiki/llm-wiki-workflow.svg`
+- Imported/recorded: 2026-04-30
+- Last checked: 2026-04-30
+- Files: 1 Markdown file + 1 SVG asset。
+- Notes: 文档系统解释 LLM Wiki 的定义、RAG 差异、raw/wiki/schema 分层、ingest/query/lint 工作流、页面设计原则和 AI-Master 落地方式。
+
 ## File Paths
 
 | Path | Size bytes | Lines | SHA-256 |
 |---|---:|---:|---|
+| `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md` | 316 | 12 | `2b7f19df9245ebd514632963b67a7a7a121d6de5c64ea0731efd4edf3fd372c6` |
+| `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/LLM Wiki 详解.md` | 12625 | 274 | `da22c1753f6b2d722d8101b819f2796537e9ba545fa98d8b34350d5590cf3a17` |
 | `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md` | 836 | 21 | `b0d609d36a954286867cc539ce45d9a5b55d71e1a8adee41d8329c588efbb3ec` |
 | `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md` | 8140 | 81 | `f3d1e1e9ba4dbdc292b5bc57ae58252d1e637184686db40cfb0b8a155c3f361f` |
-| `raw/H_Hermes-Agent(Hermes智能体)/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md` | 316 | 12 | `2b7f19df9245ebd514632963b67a7a7a121d6de5c64ea0731efd4edf3fd372c6` |
+| `raw/A_Articles(文章)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/A_Assets(素材)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/B_Books(书籍)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/C_Courses(课程)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/D_Datasets(数据集)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/E_Experiments(实验)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/P_Papers(论文)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/P_Prompts(提示词)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/T_Transcripts(转录)/readme.md` | 0 | 1 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |

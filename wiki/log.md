@@ -56,3 +56,11 @@
 - Removed duplicated body sections already covered by YAML frontmatter: top-level title, `Source Metadata`, `Tags`, `Classification`.
 - Added: 中文翻译对照；正文保留 `Original Text` 和 `Local Notes`。
 - Updated: `raw/source-manifest.md` 文件大小、行数和 SHA-256；`SCHEMA.md` 记录英文博客/长文导入格式偏好。
+
+## [2026-04-30] ingest | LLM Wiki 详解与 Agent 技术栈目录修正
+- Renamed raw directories: `raw/A_AI-Agent-Tech-Stack(AI Agent技术栈)/` -> `raw/A_AI-Agent-Tech-Stack/`，`H_Hermes-Agent(Hermes智能体)/` -> `H_Hermes-Agent/`。
+- Created raw doc: `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/LLM Wiki 详解.md`
+- Created asset: `raw/A_Assets(素材)/L_LLM-Wiki/llm-wiki-workflow.svg`
+- Created wiki page: `wiki/C_Concepts(概念)/LLM Wiki.md`
+- Updated: `SCHEMA.md`、`raw/source-manifest.md`、`wiki/index.md`、`wiki/M_Meta(元信息)/AI 资源索引.md`、Hermes Agent 相关 wiki 页面来源路径。
+- Notes: 图像生成服务缺少 `FAL_KEY`，改为生成可版本管理的本地 SVG 配图；未 push。

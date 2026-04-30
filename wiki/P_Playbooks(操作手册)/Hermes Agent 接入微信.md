@@ -4,7 +4,7 @@ created: 2026-04-30
 updated: 2026-04-30
 type: playbook
 tags: [agent, coding-agent, tooling, automation, playbook]
-sources: [../../raw/H_Hermes-Agent(Hermes智能体)/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md]
+sources: [../../raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md]
 confidence: low
 ---
 
@@ -44,4 +44,4 @@ confidence: low
 
 ## Sources
 
-- [Hermes Agent教程 - 接入微信](../../raw/H_Hermes-Agent(Hermes%E6%99%BA%E8%83%BD%E4%BD%93)/T_Tutorials(%E6%95%99%E7%A8%8B)/Hermes%20Agent教程%20-%20接入微信.md)
+- [Hermes Agent教程 - 接入微信](../../raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/T_Tutorials(%E6%95%99%E7%A8%8B)/Hermes%20Agent教程%20-%20接入微信.md)

@@ -39,8 +39,10 @@ AI-Master/
     C_Courses(课程)/
     D_Datasets(数据集)/
     E_Experiments(实验)/
-    H_Hermes-Agent(Hermes智能体)/
-      T_Tutorials(教程)/
+    A_AI-Agent-Tech-Stack/
+      H_Hermes-Agent/
+        T_Tutorials(教程)/
+      L_LLM-Wiki/
     P_Papers(论文)/
     P_Prompts(提示词)/
     T_Transcripts(转录)/
@@ -59,7 +61,8 @@ AI-Master/
 - 客观标识可保留英文、模型名、论文名、项目名、日期、版本号，例如 `GPT-4.md`、`Transformer.md`、`2026-04-30-agent实验.md`。
 - 不使用拼音简称或拼音全称来代替中文标题。
 - 每个 Markdown 页面文件名应稳定、可读、可长期引用。
-- `raw/` 和 `wiki/` 下的目录（含子目录）统一采用 `前缀_English(中文)` 格式，例如 `raw/B_Books(书籍)/`；前缀用于排序或分类，英文便于跨工具识别，中文括注便于 Obsidian 中阅读。
+- `raw/` 和 `wiki/` 下的目录（含子目录）通常采用 `前缀_English(中文)` 格式，例如 `raw/B_Books(书籍)/`；前缀用于排序或分类，英文便于跨工具识别，中文括注便于 Obsidian 中阅读。
+- Agent 相关英文术语目录保留英文原名，不额外加中文括注，例如 `raw/A_AI-Agent-Tech-Stack/`、`raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/`、`raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/`。
 
 ## Page Types
 

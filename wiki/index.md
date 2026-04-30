@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 5
+> Last updated: 2026-04-30 | Total pages: 6
 
 ## Entities
 
@@ -12,6 +12,7 @@
 ## Concepts
 
 - [[LLM Knowledge Bases]] — Andrej Karpathy 关于用 LLM 构建个人知识库的长帖方法论，覆盖 raw/wiki 分层、Obsidian 前端、Q&A、输出归档、lint 和工具扩展。
+- [[LLM Wiki]] — LLM 维护 Markdown 知识库的方法论，系统解释 raw/wiki/schema 分层、RAG 差异、导入/查询/lint 工作流和 AI-Master 落地方式。
 
 ## Comparisons
 
