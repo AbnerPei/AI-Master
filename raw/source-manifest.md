@@ -6,6 +6,7 @@
 ## Current Raw Layout
 
 - `raw/A_Articles(文章)/`：网页文章、博客、新闻、官方文档摘录。
+  - `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/`：对知识库方法论、AI 学习或长期技术判断有持续参考价值的重量级文章。
 - `raw/P_Papers(论文)/`：论文、技术报告、arXiv/PDF/OCR 派生材料。
 - `raw/B_Books(书籍)/`：书籍摘录、读书原始笔记、章节材料。
 - `raw/C_Courses(课程)/`：课程材料、课件、课程字幕、作业资料。
@@ -43,9 +44,22 @@
 - Files: 1 Markdown file。
 - Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Hermes Agent 接入微信相关参考链接。
 
+### X / Twitter | LLM Knowledge Bases
+
+- Source type: X / Twitter long-form post via public tweet mirror API (`api.fxtwitter.com`) and original X URL。
+- Source URL: https://x.com/karpathy/status/2039805659525644595
+- Author: Andrej Karpathy (@karpathy)
+- Published: 2026-04-02T20:42:21Z
+- Target: `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md`
+- Imported/recorded: 2026-04-30
+- Last checked: 2026-04-30
+- Files: 1 Markdown file。
+- Notes: 保存原文、时间、作者、平台、互动数据、tags、分类和本地备注；正文 sha256 写入 raw frontmatter，文件级 SHA-256 写入下方清单。
+
 ## File Paths
 
 | Path | Size bytes | Lines | SHA-256 |
 |---|---:|---:|---|
 | `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md` | 836 | 21 | `b0d609d36a954286867cc539ce45d9a5b55d71e1a8adee41d8329c588efbb3ec` |
+| `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md` | 5634 | 87 | `b333f6e580c4ac1e6e6e1401b736730bc32a5d280c4d201b4f8927a73804f35e` |
 | `raw/H_Hermes-Agent(Hermes智能体)/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md` | 316 | 12 | `2b7f19df9245ebd514632963b67a7a7a121d6de5c64ea0731efd4edf3fd372c6` |

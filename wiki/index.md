@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-04-30 | Total pages: 4
+> Last updated: 2026-04-30 | Total pages: 5
 
 ## Entities
 
@@ -10,6 +10,8 @@
 - [[Hermes Agent]] — AI Agent / 工具链实体页，承载 Hermes Agent 功能、渠道接入和使用经验。
 
 ## Concepts
+
+- [[LLM Knowledge Bases]] — Andrej Karpathy 关于用 LLM 构建个人知识库的长帖方法论，覆盖 raw/wiki 分层、Obsidian 前端、Q&A、输出归档、lint 和工具扩展。
 
 ## Comparisons
 

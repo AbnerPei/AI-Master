@@ -42,3 +42,12 @@
 - Domain: 整理所有 AI 相关知识，以及用户自己的学习、经验、观点、项目和方法论沉淀。
 - Structure: 创建知识库根目录、`SCHEMA.md`、`README.md`、`wiki/`、`raw/`、索引、日志和基础分类目录。
 - Layout: `SCHEMA.md`、`wiki/`、`raw/` 同级；`wiki/` 为整理层，`raw/` 为原始资料层。
+
+## [2026-04-30] ingest | LLM Knowledge Bases 文章资料
+- Source URL: https://x.com/karpathy/status/2039805659525644595
+- Author: Andrej Karpathy (@karpathy)
+- Published: 2026-04-02T20:42:21Z
+- Created raw file: `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md`
+- Created wiki page: `wiki/C_Concepts(概念)/LLM Knowledge Bases.md`
+- Updated: `raw/source-manifest.md`、`wiki/index.md`、`wiki/E_Entities(实体)/Andrej Karpathy.md`、`wiki/M_Meta(元信息)/AI 资源索引.md`
+- Notes: 按 `前缀_English(中文)` 目录规范新增重量级文章子目录；未 push。
