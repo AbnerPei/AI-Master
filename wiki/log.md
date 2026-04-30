@@ -51,3 +51,8 @@
 - Created wiki page: `wiki/C_Concepts(概念)/LLM Knowledge Bases.md`
 - Updated: `raw/source-manifest.md`、`wiki/index.md`、`wiki/E_Entities(实体)/Andrej Karpathy.md`、`wiki/M_Meta(元信息)/AI 资源索引.md`
 - Notes: 按 `前缀_English(中文)` 目录规范新增重量级文章子目录；未 push。
+## [2026-04-30] update | 优化 LLM Knowledge Bases raw 正文格式
+- Updated raw file: `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md`
+- Removed duplicated body sections already covered by YAML frontmatter: top-level title, `Source Metadata`, `Tags`, `Classification`.
+- Added: 中文翻译对照；正文保留 `Original Text` 和 `Local Notes`。
+- Updated: `raw/source-manifest.md` 文件大小、行数和 SHA-256；`SCHEMA.md` 记录英文博客/长文导入格式偏好。
