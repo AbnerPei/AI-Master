@@ -1,7 +1,7 @@
 # Source Manifest
 
 > AI 大师知识库 raw 层来源清单。
-> Last updated: 2026-05-01
+> Last updated: 2026-05-05
 
 ## Current Raw Layout
 
@@ -19,6 +19,7 @@
   - `raw/A_Assets(素材)/A_Avatar/`：人物、创作者、账号等头像图片素材。
 - `raw/A_AI-Gurus(AI大神)/`：用户导入的 AI 人物/专家资料。
 - `raw/A_AI-Content-Creator(AI 创作者)/`：用户导入的 AI 内容创作者、频道、博主等资料。
+- `raw/M_My-AI-Thoughts(我的AI思考)/`：用户关于 AI 的个人原始思考、临时观点草稿、方法论雏形；成熟后可整理到 `wiki/`。
 - `raw/A_AI-Agent-Tech-Stack/`：AI Agent 技术栈资料；Agent 相关英文术语目录保留英文原名，不加中文括注。
   - `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/`：Hermes Agent 学习与教程资料。
   - `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/`：LLM Wiki 方法论、教程、参考资料和本知识库实践说明。
@@ -88,6 +89,15 @@
 - Files: 1 Markdown file + 1 SVG asset。
 - Notes: 文档系统解释 LLM Wiki 的定义、RAG 差异、raw/wiki/schema 分层、ingest/query/lint 工作流、页面设计原则和 AI-Master 落地方式；SVG 已调整为四个等宽等高 item、居中文案与避让反馈箭头。
 
+### 用户原始思考 | 如何创建、进化和使用自己的 Agent
+
+- Source type: 用户口述核心问题后整理的本地 Markdown 原始思考草稿。
+- Target: `raw/M_My-AI-Thoughts(我的AI思考)/如何创建、进化和使用自己的 Agent.md`
+- Imported/recorded: 2026-05-05
+- Last checked: 2026-05-05
+- Files: 1 Markdown file。
+- Notes: 围绕“如何创建自己的 Agent、怎么进化这个 Agent、怎么用这个 Agent”展开，当前保留在 raw 层作为个人 AI 思考草稿；后续可拆分为 wiki 观点页、操作手册或概念页。
+
 ## File Paths
 
 | Path | Size bytes | Lines | SHA-256 |
@@ -106,6 +116,7 @@
 | `raw/C_Courses(课程)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 | `raw/D_Datasets(数据集)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 | `raw/E_Experiments(实验)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `raw/M_My-AI-Thoughts(我的AI思考)/如何创建、进化和使用自己的 Agent.md` | 13787 | 375 | `ce659727eef864b0a5c2da5c8fc8057840ff20eac2d37918f52397eb193df121` |
 | `raw/P_Papers(论文)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 | `raw/P_Prompts(提示词)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 | `raw/T_Transcripts(转录)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |

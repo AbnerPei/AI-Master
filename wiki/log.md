@@ -11,6 +11,12 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-05] create | 新增个人 AI 思考 raw 目录与 Agent 方法论草稿
+- Added raw directory: `raw/M_My-AI-Thoughts(我的AI思考)/`。
+- Created raw file: `raw/M_My-AI-Thoughts(我的AI思考)/如何创建、进化和使用自己的 Agent.md`。
+- Updated: `SCHEMA.md`、`raw/source-manifest.md`。
+- Notes: 本次仅创建 raw 层个人原始思考草稿，围绕如何创建自己的 Agent、如何进化 Agent、如何使用 Agent；暂未创建 wiki 整理页。
+
 ## [2026-05-01] update | 吸收新增 B站 AI 创作者资料并规范目录
 - Added raw files: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - code秘密花园.md`、`raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 慢学AI.md`、`raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 堂吉诃德拉曼查的英豪.md`。
 - Updated raw file: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 第四种黑猩猩CHIMP.md`，按用户改动恢复为 B 站头像 URL 引用。
