@@ -1,6 +1,8 @@
 filters:
   or:
     - file.name.startsWith("AI 大神")
+formulas:
+  未命名: ""
 views:
   - type: cards
     name: AI 大神

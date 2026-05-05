@@ -38,9 +38,9 @@
 - Source type: 用户手动导入的本地 Markdown 目录。
 - Target: `raw/A_AI-Gurus(AI大神)/`
 - Imported/recorded: 2026-04-30
-- Last checked: 2026-04-30
-- Files: 1 Markdown file。
-- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Andrej Karpathy 简介、平台链接与内容链接。本次用户补充了 `AI 创作者` 分类与头像 URL 元数据。
+- Last checked: 2026-05-05
+- Files: 2 Markdown files。
+- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Andrej Karpathy、李尚龙等 AI 人物/专家资料。本次用户补充了视频号来源的李尚龙资料。
 
 ### 用户手动导入 | AI 创作者
 
@@ -49,8 +49,8 @@
 - Asset target: `raw/A_Assets(素材)/A_Avatar/`
 - Imported/recorded: 2026-04-30
 - Last checked: 2026-05-05
-- Files: 5 Markdown files + 1 PNG asset。
-- Notes: 当前仅记录 raw 文件与素材，不改写原始内容；包含“第四种黑猩猩CHIMP”、`code秘密花园`、`慢学AI`、`堂吉诃德拉曼查的英豪`、`所长林超` 等 B 站 AI 创作者资料。已将误生成的 `raw/A_AI-Content-Creator(AI创作者)/` 归并到规范路径 `raw/A_AI-Content-Creator(AI 创作者)/`。
+- Files: 7 Markdown files + 1 PNG asset。
+- Notes: 当前仅记录 raw 文件与素材，不改写原始内容；包含“第四种黑猩猩CHIMP”、`code秘密花园`、`慢学AI`、`堂吉诃德拉曼查的英豪`、`所长林超`、`2B大叔`、`晓辉博士` 等 AI 创作者资料。已将误生成的 `raw/A_AI-Content-Creator(AI创作者)/` 归并到规范路径 `raw/A_AI-Content-Creator(AI 创作者)/`。
 
 ### 用户手动导入 | Hermes Agent
 
@@ -98,18 +98,30 @@
 - Files: 1 Markdown file。
 - Notes: 围绕“如何创建自己的 Agent、怎么进化这个 Agent、怎么用这个 Agent”展开，当前保留在 raw 层作为个人 AI 思考草稿；后续可拆分为 wiki 观点页、操作手册或概念页。
 
+### 视频号剪藏 | 李尚龙
+
+- Source type: 用户快速采集的视频号剪藏，包含 Markdown 摘要、JSON 元数据与封面图。
+- Target: `Clippings/视频号/`
+- Imported/recorded: 2026-05-05
+- Last checked: 2026-05-05
+- Files: 1 Markdown file + 1 JSON metadata file + 1 JPG cover image。
+- Notes: 当前保留为根目录 `Clippings/` 下的临时剪藏原始落地文件；其中人物资料已另存为 `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙.md`。
+
 ## File Paths
 
 | Path | Size bytes | Lines | SHA-256 |
 |---|---:|---:|---|
 | `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md` | 316 | 12 | `2b7f19df9245ebd514632963b67a7a7a121d6de5c64ea0731efd4edf3fd372c6` |
 | `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/LLM Wiki 详解.md` | 12625 | 274 | `da22c1753f6b2d722d8101b819f2796537e9ba545fa98d8b34350d5590cf3a17` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 2B大叔.md` | 1102 | 19 | `23dbe3c85315aea82242eeac86b28d27d6befa7ac0065d54f2b5aeac96f48d1a` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - code秘密花园.md` | 440 | 17 | `3b5c82282f1a6b0af9758bd89ee391504a1e72d5f3426b3611f04a9430f16460` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 堂吉诃德拉曼查的英豪.md` | 423 | 17 | `f6fbaa8b3bdf48cb47a06a1fb440e2439e271bfdd09b1437d10c468246930e3d` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 慢学AI.md` | 571 | 17 | `e133677b4ed23904b4d77ebb4e7614cbf891508e35111b246e5bc622dc61bc91` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 所长林超.md` | 482 | 17 | `6ee2d36deea6674f7b24221fb1acaef2edccd78a1c91a4774160f0b07f31402d` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 晓辉博士.md` | 1185 | 19 | `516c723c47bcd975143b902f03c5e53416998c928ff918656997b2be85a95dc9` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 第四种黑猩猩CHIMP.md` | 593 | 17 | `e334621aed67c3ad44440a39e172b36fd3976fd33661b2e5898a3c6373560ccf` |
 | `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md` | 903 | 23 | `f6ecdd47d63dd52ae187c456dbc9485861a7541dbfeb06efb1f3565f7b89271e` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙.md` | 746 | 19 | `afc1e8b6264441bc277e0f71f02cb882fd7cbab6c2cbcbcbf76ba09e58ddc39a` |
 | `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md` | 8140 | 81 | `f3d1e1e9ba4dbdc292b5bc57ae58252d1e637184686db40cfb0b8a155c3f361f` |
 | `raw/A_Articles(文章)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 | `raw/A_Assets(素材)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
@@ -126,5 +138,13 @@
 
 | Path | Size bytes | SHA-256 |
 |---|---:|---|
+| `Clippings/视频号/AU25W7Em6f_cover.jpg` | 44622 | `9ada47eada3ae97115dd14e93b95f186a3cdcb545197574b1a8688254739f8c2` |
 | `raw/A_Assets(素材)/A_Avatar/B站_第四种黑猩猩CHIMP.png` | 164695 | `5e5d1b69d62baff1262f521ab2333d14e5d127732d4b817112e6304a852bca51` |
 | `raw/A_Assets(素材)/L_LLM-Wiki/llm-wiki-workflow.svg` | 6516 | `44e7e2124d0c88dfe14b7b7026e81ec19aa1580b5bdfa877abded21195a3799f` |
+
+## Clipping Metadata Paths
+
+| Path | Size bytes | Lines | SHA-256 |
+|---|---:|---:|---|
+| `Clippings/视频号/AU25W7Em6f_meta.json` | 966 | 9 | `5cabdb30a140747b76c6e87642d9af65249c0fefcabaa9a325b0b7f21ad77e5c` |
+| `Clippings/视频号/你以为的“贩卖焦虑”只是你没见过的“世界常识”贩卖焦虑.md` | 598 | 19 | `f0789113afc64adf6f41567017d050deaeaf14de402f5a36a2477890623363b3` |

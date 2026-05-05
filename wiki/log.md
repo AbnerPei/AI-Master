@@ -11,6 +11,13 @@
 > Actions: ingest, update, query, lint, create, archive, delete
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-05] ingest | 吸收视频号 AI 人物与创作者新增资料
+- Added raw files: `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙.md`、`raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 2B大叔.md`、`raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 晓辉博士.md`。
+- Added clipping files: `Clippings/视频号/你以为的“贩卖焦虑”只是你没见过的“世界常识”贩卖焦虑.md`、`Clippings/视频号/AU25W7Em6f_meta.json`、`Clippings/视频号/AU25W7Em6f_cover.jpg`。
+- Updated: `SCHEMA.md`、`raw/source-manifest.md`、`DB/DB_AI 大神.base`。
+- Normalized directory: 将用户新增的 `raw/A_AI-Content-Creator(AI创作者)/` 文件归并到规范路径 `raw/A_AI-Content-Creator(AI 创作者)/`。
+- Notes: 本次按用户要求阅读新增改动、补充 manifest/log/schema 记录、提交并 push。
+
 ## [2026-05-05] create | 新增个人 AI 思考 raw 目录与 Agent 方法论草稿
 - Added raw directory: `raw/M_My-AI-Thoughts(我的AI思考)/`。
 - Created raw file: `raw/M_My-AI-Thoughts(我的AI思考)/如何创建、进化和使用自己的 Agent.md`。
