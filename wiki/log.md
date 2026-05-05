@@ -17,6 +17,11 @@
 - Updated: `SCHEMA.md`、`raw/source-manifest.md`。
 - Notes: 本次仅创建 raw 层个人原始思考草稿，围绕如何创建自己的 Agent、如何进化 Agent、如何使用 Agent；暂未创建 wiki 整理页。
 
+## [2026-05-05] ingest | 补充提交 B站 AI 创作者所长林超资料
+- Added raw file: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 所长林超.md`。
+- Updated: `raw/source-manifest.md`，刷新 AI 创作者文件数量与文件级 SHA-256。
+- Notes: 本次按用户要求补充提交此前未纳入 Git 的新增 AI 创作者资料，并 push 到远程 `origin/master`。
+
 ## [2026-05-01] update | 吸收新增 B站 AI 创作者资料并规范目录
 - Added raw files: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - code秘密花园.md`、`raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 慢学AI.md`、`raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 堂吉诃德拉曼查的英豪.md`。
 - Updated raw file: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 第四种黑猩猩CHIMP.md`，按用户改动恢复为 B 站头像 URL 引用。
