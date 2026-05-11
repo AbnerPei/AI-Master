@@ -4,6 +4,7 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "ingested": "date",
-    "创建日期": "datetime"
+    "创建日期": "datetime",
+    "date": "datetime"
   }
 }

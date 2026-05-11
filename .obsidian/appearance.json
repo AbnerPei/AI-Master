@@ -1,3 +1,8 @@
 {
-  "cssTheme": "Maple"
+  "cssTheme": "Maple",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "网格背景",
+    "简易音频播放"
+  ]
 }

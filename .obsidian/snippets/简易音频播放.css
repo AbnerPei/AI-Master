@@ -1,0 +1,29 @@
+/* 1. 隐藏进度条 */
+audio::-webkit-media-controls-timeline {
+    display: none !important;
+}
+
+/* 2. 隐藏时间文本 */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    display: none !important;
+}
+
+/* 3. 稳健的尺寸设置 */
+audio {
+    /* 不要设置 height，让它自适应 */
+    /* 不要设置 width 为固定像素，使用 max-width 限制它不要太长 */
+    max-width: 105px !important; 
+    min-width: 80px !important;  /* 保证至少有 80px 宽 */
+    
+    /* 强制显示为 inline-block，防止消失 */
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+/* 4. 确保控制面板是 flex 布局 (有些主题会把它改乱) */
+audio::-webkit-media-controls-panel {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
