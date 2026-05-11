@@ -12,6 +12,11 @@
 
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-11] update | 将 AI 工具导航收藏改为时间轴卡片呈现
+- Updated raw file: `raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/AI 工具导航与信息源收藏.md`。
+- Change: 将原表格改为参考 `AIHOT` 的“日期分组 + 上下时间轴 + 网址卡片 + 推荐理由 + 下一步动作”结构。
+- Updated: `raw/source-manifest.md`，刷新正文 SHA-256、文件级 SHA-256、大小和行数。
+
 ## [2026-05-11] create | 新增 AI 工具导航与信息源收藏清单
 - Added raw directory: `raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/`。
 - Created raw file: `raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/AI 工具导航与信息源收藏.md`，记录 `AI工具集` 与 `AIHOT` 两个网址。

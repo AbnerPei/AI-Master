@@ -122,7 +122,7 @@
 - Imported/recorded: 2026-05-11
 - Last checked: 2026-05-11
 - Files: 1 Markdown file。
-- Notes: 当前作为 raw 层网址收藏与候选信息源清单；后续如形成固定工具发现 / 信息监控流程，可整理到 `wiki/P_Playbooks(操作手册)/AI 工具发现与信息监控.md`。
+- Notes: 当前作为 raw 层网址收藏与候选信息源清单，采用按日期分组的上下时间轴卡片样式；后续如形成固定工具发现 / 信息监控流程，可整理到 `wiki/P_Playbooks(操作手册)/AI 工具发现与信息监控.md`。
 
 ### 用户手动导入 | Git 工具学习资料
 
@@ -147,7 +147,7 @@
 
 | Path | Size bytes | Lines | SHA-256 |
 |---|---:|---:|---|
-| `raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/AI 工具导航与信息源收藏.md` | 1693 | 37 | `8de8e035b1da0c5cbdbc056cf0b6bb157f217b0cbb96cb0b264816cf598bbaa9` |
+| `raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/AI 工具导航与信息源收藏.md` | 3345 | 101 | `4510dff1df550e3f47e4009d4d67adb3a9fd88990c86a268d8faeddb0276360a` |
 | `raw/A_Tools(工具)/Git/GitHub/在一台电脑上同时使用多个GitHub账号.md` | 173 | 5 | `6fbae1318ad0e584dfb35f337432afc597e817662fcb84b6e3b20af5f9947157` |
 | `raw/A_Tools(工具)/Git/Git的三种状态（必须掌握）.md` | 710 | 13 | `19baf235894fc8c03cc405215885099659045392849764ecf3ccd9f98531ef72` |
 | `raw/A_Tools(工具)/Git/git commit后撤销.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
