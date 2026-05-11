@@ -8,6 +8,7 @@
 - `raw/A_Articles(文章)/`：网页文章、博客、新闻、官方文档摘录。
   - `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/`：对知识库方法论、AI 学习或长期技术判断有持续参考价值的重量级文章。
 - `raw/A_Tools(工具)/`：工具链、开发工具、命令行、版本管理等原始学习资料。
+  - `raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/`：AI 工具导航、信息源入口、工具发现与监控网址收藏。
   - `raw/A_Tools(工具)/Git/`：Git 学习资料、操作教程、相关链接与配图。
 - `raw/P_Papers(论文)/`：论文、技术报告、arXiv/PDF/OCR 派生材料。
 - `raw/B_Books(书籍)/`：书籍摘录、读书原始笔记、章节材料。
@@ -110,6 +111,19 @@
 - Files: 1 Markdown file + 1 JSON metadata file + 1 JPG cover image。
 - Notes: 当前保留为根目录 `Clippings/` 下的临时剪藏原始落地文件；其中人物资料已另存为 `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙.md`。
 
+
+### 用户手动记录 | AI 工具导航与信息源收藏
+
+- Source type: 用户手动记录的网址收藏清单。
+- Source URLs:
+  - https://ai-bot.cn/#term-97
+  - https://aihot.virxact.com
+- Target: `raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/AI 工具导航与信息源收藏.md`
+- Imported/recorded: 2026-05-11
+- Last checked: 2026-05-11
+- Files: 1 Markdown file。
+- Notes: 当前作为 raw 层网址收藏与候选信息源清单；后续如形成固定工具发现 / 信息监控流程，可整理到 `wiki/P_Playbooks(操作手册)/AI 工具发现与信息监控.md`。
+
 ### 用户手动导入 | Git 工具学习资料
 
 - Source type: 用户手动导入的本地 Markdown 教程、链接笔记与 PNG 配图。
@@ -133,6 +147,7 @@
 
 | Path | Size bytes | Lines | SHA-256 |
 |---|---:|---:|---|
+| `raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/AI 工具导航与信息源收藏.md` | 1693 | 37 | `8de8e035b1da0c5cbdbc056cf0b6bb157f217b0cbb96cb0b264816cf598bbaa9` |
 | `raw/A_Tools(工具)/Git/GitHub/在一台电脑上同时使用多个GitHub账号.md` | 173 | 5 | `6fbae1318ad0e584dfb35f337432afc597e817662fcb84b6e3b20af5f9947157` |
 | `raw/A_Tools(工具)/Git/Git的三种状态（必须掌握）.md` | 710 | 13 | `19baf235894fc8c03cc405215885099659045392849764ecf3ccd9f98531ef72` |
 | `raw/A_Tools(工具)/Git/git commit后撤销.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |

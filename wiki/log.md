@@ -9,7 +9,15 @@
 > Chronological record of all wiki actions. Append-only.
 > Format: `## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
+
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
+
+## [2026-05-11] create | 新增 AI 工具导航与信息源收藏清单
+- Added raw directory: `raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/`。
+- Created raw file: `raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/AI 工具导航与信息源收藏.md`，记录 `AI工具集` 与 `AIHOT` 两个网址。
+- Updated: `SCHEMA.md`、`raw/source-manifest.md`，登记目录规则、来源说明和文件级 SHA-256。
+- Notes: 当前仅作为 raw 层网址收藏；后续如形成固定工具发现 / 信息监控流程，再整理到 `wiki/P_Playbooks(操作手册)/AI 工具发现与信息监控.md`。
+
 
 ## [2026-05-11] ingest | 补充 Git 工具学习资料与视频号下载教程
 - Added raw directory: `raw/A_Tools(工具)/Git/`，包含 Git 教程、链接笔记与配图。

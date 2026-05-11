@@ -44,6 +44,7 @@ AI-Master/
     C_Courses(课程)/
       T_Tutorials(教程)/
     A_Tools(工具)/
+      A_AI-Tool-Directories(AI工具导航)/
       Git/
     D_Datasets(数据集)/
     E_Experiments(实验)/
@@ -73,7 +74,7 @@ AI-Master/
 - `raw/` 和 `wiki/` 下的目录（含子目录）通常采用 `前缀_English(中文)` 格式，例如 `raw/B_Books(书籍)/`；前缀用于排序或分类，英文便于跨工具识别，中文括注便于 Obsidian 中阅读。
 - Agent 相关英文术语目录保留英文原名，不额外加中文括注，例如 `raw/A_AI-Agent-Tech-Stack/`、`raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/`、`raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/`。
 - 用户自己的 AI 原始思考、临时观点草稿和未整理方法论可放入 `raw/M_My-AI-Thoughts(我的AI思考)/`；后续成熟后再拆到 `wiki/O_Opinions(观点)/`、`wiki/P_Playbooks(操作手册)/` 或 `wiki/C_Concepts(概念)/`。
-- `raw/A_Tools(工具)/` 保存工具链、开发工具、命令行、版本管理等原始学习资料；当前 `raw/A_Tools(工具)/Git/` 保存 Git 相关教程、链接和配图。
+- `raw/A_Tools(工具)/` 保存工具链、开发工具、命令行、版本管理、工具导航与信息源监控等原始学习资料；当前 `raw/A_Tools(工具)/Git/` 保存 Git 相关教程、链接和配图，`raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/` 保存 AI 工具导航、信息源入口和工具发现清单。
 
 ## Page Types
 
