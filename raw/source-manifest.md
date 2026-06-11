@@ -1,7 +1,7 @@
 # Source Manifest
 
 > AI 大师知识库 raw 层来源清单。
-> Last updated: 2026-05-11
+> Last updated: 2026-05-30
 
 ## Current Raw Layout
 
@@ -20,6 +20,8 @@
 - `raw/P_Prompts(提示词)/`：Prompt 原始版本、对话样本、提示词实验。
 - `raw/A_Assets(素材)/`：图片、截图、图表、页面渲染图、附件。
   - `raw/A_Assets(素材)/L_LLM-Wiki/`：LLM Wiki 介绍与方法论文档配图，当前包含 `llm-wiki-workflow.svg`（6516 bytes）。
+  - `raw/A_Assets(素材)/O_OpenSpec/`：`OpenSpec` 命令详解与使用手册配图，当前包含 9 张基于用户指定 `image - 2` 风格参考生成的 `PNG` 配图。
+  - `raw/A_Assets(素材)/P_Pi/`：`Pi` 项目整理页配图，当前包含 3 张基于 `image-2` 生成的 `PNG` 文档插图。
   - `raw/A_Assets(素材)/A_Avatar/`：人物、创作者、账号等头像图片素材。
 - `raw/A_AI-Gurus(AI大神)/`：用户导入的 AI 人物/专家资料。
 - `raw/A_AI-Content-Creator(AI 创作者)/`：用户导入的 AI 内容创作者、频道、博主等资料。
@@ -27,6 +29,7 @@
 - `raw/A_AI-Agent-Tech-Stack/`：AI Agent 技术栈资料；Agent 相关英文术语目录保留英文原名，不加中文括注。
   - `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/`：Hermes Agent 学习与教程资料。
   - `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/`：LLM Wiki 方法论、教程、参考资料和本知识库实践说明。
+  - `raw/A_AI-Agent-Tech-Stack/P_Pi/`：`Pi` 官方 `GitHub` 仓库与文档快照，覆盖项目总览、快速上手、扩展系统、`provider` 扩展以及底层包说明。
 
 ## Placement Rules
 
@@ -42,9 +45,9 @@
 - Source type: 用户手动导入的本地 Markdown 目录。
 - Target: `raw/A_AI-Gurus(AI大神)/`
 - Imported/recorded: 2026-04-30
-- Last checked: 2026-05-05
-- Files: 2 Markdown files。
-- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Andrej Karpathy、李尚龙等 AI 人物/专家资料。本次用户补充了视频号来源的李尚龙资料。
+- Last checked: 2026-05-22
+- Files: 4 Markdown files。
+- Notes: 当前仅记录 raw 文件，不改写原始内容；其中包含 Andrej Karpathy、Hung-yi Lee、李尚龙、傅盛讲AI 等 AI 人物/专家资料。本次用户补充了 YouTube 来源的 Hung-yi Lee 资料。
 
 ### 用户手动导入 | AI 创作者
 
@@ -52,9 +55,9 @@
 - Target: `raw/A_AI-Content-Creator(AI 创作者)/`
 - Asset target: `raw/A_Assets(素材)/A_Avatar/`
 - Imported/recorded: 2026-04-30
-- Last checked: 2026-05-11
-- Files: 8 Markdown files + 1 PNG asset。
-- Notes: 当前仅记录 raw 文件与素材，不改写原始内容；包含“第四种黑猩猩CHIMP”、`code秘密花园`、`慢学AI`、`堂吉诃德拉曼查的英豪`、`所长林超`、`张咋啦Zara`、`2B大叔`、`晓辉博士` 等 AI 创作者资料。已将误生成的 `raw/A_AI-Content-Creator(AI创作者)/` 归并到规范路径 `raw/A_AI-Content-Creator(AI 创作者)/`。
+- Last checked: 2026-05-18
+- Files: 12 Markdown files + 1 PNG asset。
+- Notes: 当前仅记录 raw 文件与素材，不改写原始内容；包含“第四种黑猩猩CHIMP”、`code秘密花园`、`慢学AI`、`堂吉诃德拉曼查的英豪`、`所长林超`、`张咋啦Zara`、`秋芝2046`、`杨彧鑫AI`、`聂风KIKI的创业成长`、`未来博士wepon`、`2B大叔`、`晓辉博士` 等 AI 创作者资料。已将误生成的 `raw/A_AI-Content-Creator(AI创作者)/` 归并到规范路径 `raw/A_AI-Content-Creator(AI 创作者)/`。
 
 ### 用户手动导入 | Hermes Agent
 
@@ -92,6 +95,35 @@
 - Last checked: 2026-04-30
 - Files: 1 Markdown file + 1 SVG asset。
 - Notes: 文档系统解释 LLM Wiki 的定义、RAG 差异、raw/wiki/schema 分层、ingest/query/lint 工作流、页面设计原则和 AI-Master 落地方式；SVG 已调整为四个等宽等高 item、居中文案与避让反馈箭头。
+
+### `GitHub` 官方资料 | `Pi`
+
+- Source type: `GitHub` 仓库 `README`、官方文档页、包级 `README` 与仓库元数据快照。
+- Source URLs:
+  - https://github.com/earendil-works/pi/blob/main/README.md
+  - https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/quickstart.md
+  - https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/extensions.md
+  - https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/skills.md
+  - https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/packages.md
+  - https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/custom-provider.md
+  - https://github.com/earendil-works/pi/blob/main/packages/ai/README.md
+  - https://github.com/earendil-works/pi/blob/main/packages/agent/README.md
+  - https://api.github.com/repos/earendil-works/pi
+- Target: `raw/A_AI-Agent-Tech-Stack/P_Pi/`
+- Asset target: `raw/A_Assets(素材)/P_Pi/`
+- Imported/recorded: 2026-05-30
+- Last checked: 2026-05-30
+- Files: 9 Markdown files + 3 PNG assets。
+- Notes: 这批资料覆盖 `Pi` 的项目定位、安装与认证、会话与工具调用、`skills` / `extensions` / `packages` 体系、`custom providers` 与 `OAuth` 扩展方式，以及 `pi-ai` / `pi-agent-core` 的底层职责。`GitHub API` 快照记录的是 `2026-05-30` 当天的仓库可见元数据。配图使用 `image-2` 生成，服务于 `wiki` 中的 `Pi` 系列页面。
+
+### AI 生成配图 | OpenSpec 命令详解
+
+- Source type: 基于用户指定 `image - 2` 视觉风格参考生成的 `AI` 配图。
+- Target: `raw/A_Assets(素材)/O_OpenSpec/`
+- Imported/recorded: 2026-05-19
+- Last checked: 2026-05-19
+- Files: 9 `PNG` assets。
+- Notes: 服务于 `wiki/P_Playbooks(操作手册)/OpenSpec 命令与使用详解.md`；主题覆盖封面、生命周期、`spec` 与 `change` 关系、命令分组、初始化后项目结构、规划阶段、实施与校验、`OpenSpec` 与 `ad-hoc` 开发对比、最佳实践与反模式。
 
 ### 用户原始思考 | 如何创建、进化和使用自己的 Agent
 
@@ -157,15 +189,30 @@
 | `raw/C_Courses(课程)/T_Tutorials(教程)/如何下载视频号的视频/如何下载视频号的视频.md` | 1622 | 58 | `041229f98be96411e12177476fb6c3ff4e73b4d7cddea972af088c2ffd4b9618` |
 | `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md` | 316 | 12 | `2b7f19df9245ebd514632963b67a7a7a121d6de5c64ea0731efd4edf3fd372c6` |
 | `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/LLM Wiki 详解.md` | 12625 | 274 | `da22c1753f6b2d722d8101b819f2796537e9ba545fa98d8b34350d5590cf3a17` |
+| `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-agent-core-readme.md` | 16423 | 506 | `acae8d4e7756616b06851ea4e4eadbc7f4b9d8597c5cffb18aae7077c821593f` |
+| `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-ai-readme.md` | 54460 | 1401 | `e0f70b0deb414ec34dd79f300e5c2d0031393f2ba062d3175b8ef6b8024b7297` |
+| `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-custom-providers.md` | 26055 | 754 | `c2584fcd946a89b61e60d42298168f7dea36875e49dc0d515b41895fe02f3077` |
+| `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-extensions.md` | 98276 | 2620 | `ab99d281d6e4a55f72b21238a68244f6063b61669e3202caa50de516bab20174` |
+| `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-github-repo-metadata.md` | 841 | 33 | `ffede71c248a5efe9be3d1947dbd995eeb00c6bda1a4cee38b30fc80b84ca351` |
+| `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-packages.md` | 8770 | 244 | `60329309e2bcaa7497cb11b49908620af20ab1e37c20a5529b8c44130716fc8c` |
+| `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-quickstart.md` | 4922 | 183 | `b1a23447f324f8de80d831f147bdbf63222f97e2d8aac79cf873f5ecfa82abe6` |
+| `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-root-readme.md` | 5097 | 107 | `8b47cb5a7117c31b06b24234001361e55d4c10c4fcc73939665d7e80cde182dc` |
+| `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-skills.md` | 7287 | 249 | `edac88d72e7d2596213eda4a1fb96cc80cb295589135c99c742024af21b9393c` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 2B大叔.md` | 1102 | 19 | `23dbe3c85315aea82242eeac86b28d27d6befa7ac0065d54f2b5aeac96f48d1a` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - code秘密花园.md` | 440 | 17 | `3b5c82282f1a6b0af9758bd89ee391504a1e72d5f3426b3611f04a9430f16460` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 堂吉诃德拉曼查的英豪.md` | 423 | 17 | `f6fbaa8b3bdf48cb47a06a1fb440e2439e271bfdd09b1437d10c468246930e3d` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 慢学AI.md` | 571 | 17 | `e133677b4ed23904b4d77ebb4e7614cbf891508e35111b246e5bc622dc61bc91` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 所长林超.md` | 482 | 17 | `6ee2d36deea6674f7b24221fb1acaef2edccd78a1c91a4774160f0b07f31402d` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 张咋啦Zara.md` | 751 | 19 | `a2878d56b7d578076919961fb4553bc2901cd0b16acae688a63fe3817a0c8772` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 秋芝2046.md` | 684 | 21 | `c00426c7a624692ad015319ce3023400840978be6b4f2dbbc35124f83492c4b8` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 杨彧鑫AI.md` | 933 | 19 | `7475277a40213570ea8d92fb85ba62c23c2e1f48f4b935ed6769be35b6834809` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 聂风KIKI的创业成长.md` | 762 | 20 | `e0c40364cff599155c246b1dd1708b421287af2f59ca9d50568fb28c8cbe4ccb` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 未来博士wepon.md` | 1061 | 20 | `6e48317553ed66c88221917b2c9258d0d09325b783604eea09add9c474c5f79e` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 晓辉博士.md` | 1185 | 19 | `516c723c47bcd975143b902f03c5e53416998c928ff918656997b2be85a95dc9` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 第四种黑猩猩CHIMP.md` | 593 | 17 | `e334621aed67c3ad44440a39e172b36fd3976fd33661b2e5898a3c6373560ccf` |
 | `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md` | 903 | 23 | `f6ecdd47d63dd52ae187c456dbc9485861a7541dbfeb06efb1f3565f7b89271e` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - Hung-yi Lee.md` | 622 | 21 | `27dadf1234a26e442446036562b01628921fe582d456a3cc4f1b2aa7173cdb2e` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI.md` | 815 | 19 | `b85f7b66996f2a5e185908781be608beaf2cb11129d7d4c3973bcc4b1d5b5734` |
 | `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙.md` | 746 | 19 | `afc1e8b6264441bc277e0f71f02cb882fd7cbab6c2cbcbcbf76ba09e58ddc39a` |
 | `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md` | 8140 | 81 | `f3d1e1e9ba4dbdc292b5bc57ae58252d1e637184686db40cfb0b8a155c3f361f` |
 | `raw/A_Articles(文章)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
@@ -196,6 +243,18 @@
 | `Clippings/视频号/AU25W7Em6f_cover.jpg` | 44622 | `9ada47eada3ae97115dd14e93b95f186a3cdcb545197574b1a8688254739f8c2` |
 | `raw/A_Assets(素材)/A_Avatar/B站_第四种黑猩猩CHIMP.png` | 164695 | `5e5d1b69d62baff1262f521ab2333d14e5d127732d4b817112e6304a852bca51` |
 | `raw/A_Assets(素材)/L_LLM-Wiki/llm-wiki-workflow.svg` | 6516 | `44e7e2124d0c88dfe14b7b7026e81ec19aa1580b5bdfa877abded21195a3799f` |
+| `raw/A_Assets(素材)/O_OpenSpec/openspec-01-cover.png` | 2258314 | `e4ac5c376403b645935a4e31bc48fb92141954551c9b8cdf92d55ce752a8c242` |
+| `raw/A_Assets(素材)/O_OpenSpec/openspec-02-lifecycle.png` | 1964254 | `4087207d4a01fcf1939ca05627e7d629ca52316cbd7eb2f852d013c7f7353411` |
+| `raw/A_Assets(素材)/O_OpenSpec/openspec-03-spec-and-change.png` | 2405545 | `eef5d8ee3e6058cf73f180fd6fafd050e06058791713cd5c82885f41b82b5cbb` |
+| `raw/A_Assets(素材)/O_OpenSpec/openspec-04-command-groups.png` | 2292775 | `3d062091ce2e2030035ac53c94eb89bd52869b6f85907efb9375e476bd747f5f` |
+| `raw/A_Assets(素材)/O_OpenSpec/openspec-05-project-structure.png` | 2254191 | `6cb1ba412a5bc2ad44df8d2c0f77455593373e104e3bee1475088be47cd3ad79` |
+| `raw/A_Assets(素材)/O_OpenSpec/openspec-06-planning-stage.png` | 2409619 | `769e63597f6facec3564b837b717ccfbcdcbd3511fc04c309f80f5b4e3475b78` |
+| `raw/A_Assets(素材)/O_OpenSpec/openspec-07-implementation-and-validation.png` | 2076556 | `54dd2566d05b01518fc5a91f86ed955396c24d163accc59f8fedf50c5cf7bf7e` |
+| `raw/A_Assets(素材)/O_OpenSpec/openspec-08-openspec-vs-ad-hoc.png` | 2122210 | `81eea019289487aa727ddd1873fe8f92ab1e70a64eed67500d13ec2b46abb7a9` |
+| `raw/A_Assets(素材)/O_OpenSpec/openspec-09-best-practices.png` | 1970511 | `e48548bedf276b1306c4a524d6201b0a244d292464f84866bcf5f7a6e9e3af52` |
+| `raw/A_Assets(素材)/P_Pi/pi-01-cover.png` | 2454575 | `1fb10761c5f48d70ccaa6a59c17d1a2f30011975080d9fa3cf8028f1da220cf5` |
+| `raw/A_Assets(素材)/P_Pi/pi-02-agent-stack.png` | 2503667 | `f353123b05a8eae90798361c99f9d5ddab9366670b24d0d2fa8e6abb849f6ef7` |
+| `raw/A_Assets(素材)/P_Pi/pi-03-extensibility-map.png` | 1667959 | `d23b498a5664d66a790f8471f8a6903a9ce4baf213718f82218efb0c596e1a21` |
 
 ## Clipping Metadata Paths
 

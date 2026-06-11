@@ -1,0 +1,9 @@
+{
+  "id": "ap-timeline",
+  "name": "AP Timeline",
+  "version": "0.0.1",
+  "minAppVersion": "0.15.0",
+  "description": "Render AIHOT-style timeline cards in Obsidian with Markdown-friendly content.",
+  "author": "Peijianbo",
+  "isDesktopOnly": false
+}

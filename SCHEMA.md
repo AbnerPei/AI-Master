@@ -18,6 +18,9 @@ AI-Master/
   SCHEMA.md              # 本文件：结构、标签、写作、raw、Obsidian 规则
   DB/                    # Obsidian Bases：用于卡片视图、资料库筛选和导航
   Clippings/             # 用户临时剪藏/快速采集的原始落地目录，后续可整理进 raw 或 wiki
+  Timeline/              # 每天的学习流水、链接、摘句、临时笔记时间线
+    模板/
+    2026/
   wiki/                  # 整理层 / 综合层
     index.md
     log.md
@@ -61,9 +64,19 @@ AI-Master/
 
 - `raw/` 是原始资料层：保存外部来源、用户原始摘录、PDF/OCR/HTML 导入副本、实验原始输出等。除导入时生成清单/派生 Markdown 外，不随意改写原始来源内容。
 - `Clippings/` 是用户临时剪藏/快速采集的原始落地目录：可保留采集工具生成的 Markdown、JSON 元数据、封面图等，后续再按主题整理进 `raw/` 或 `wiki/`。
+- `Timeline/` 是日常学习流水层：记录“今天看了什么、听了什么、记下了什么、下一步做什么”，允许保留尚未整理完成的临时笔记、链接、摘句和想法。
 - `wiki/` 是整理层：由 AI 助手和用户共同维护，用于综合、抽象、交叉链接、形成可复用知识。
 - `SCHEMA.md` 与 `wiki/`、`raw/` 同级，约束整个知识库。
 - 从 `wiki/` 子目录页面引用 raw 来源时使用相对路径：通常为 `../../raw/...`；从 `wiki/index.md`、`wiki/log.md` 等 wiki 根文件引用 raw 时使用 `../raw/...`。
+
+## Timeline Rules
+
+- `Timeline/` 推荐按 `Timeline/YYYY/YYYY-MM 学习时间线.md` 组织，按月持续追加，不必为每一条学习记录单独建文件。
+- 当前时间线渲染统一使用仓库内自定义插件 `timeline`，代码块名固定为 `aihot-timeline`。
+- 每一条时间线记录写成一个 `YAML` 条目，多个条目之间用单独一行 `---` 分隔。
+- 推荐字段包括 `date`、`time`、`source`、`sourceUrl`、`title`、`url`、`tags`、`content`、`reason`、`discussions`、`note`；按需填写，不要求每条都完整。
+- 视频、文章、播客、帖子等链接优先放在 `sourceUrl` 或 `url`；正文说明优先写进 `content`、`reason`、`note`。
+- 当某条记录已经沉淀为稳定概念、经验、操作手册或项目方法时，再从 `Timeline/` 提炼到 `wiki/`。
 
 ## Naming Conventions
 

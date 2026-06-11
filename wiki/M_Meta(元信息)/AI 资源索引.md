@@ -1,10 +1,10 @@
 ---
 title: AI 资源索引
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-30
 type: summary
 tags: [ai, source, summary]
-sources: [../../raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md, ../../raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md, ../../raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md, ../../raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/LLM Wiki 详解.md]
+sources: [../../raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md, ../../raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md, ../../raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md, ../../raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/LLM Wiki 详解.md, ../../raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-root-readme.md, ../../raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-quickstart.md, ../../raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-extensions.md]
 confidence: medium
 ---
 
@@ -18,6 +18,7 @@ confidence: medium
 
 - AI 人物/信息源：[[Andrej Karpathy]]
 - AI Agent 工具与教程：[[Hermes Agent]]、[[Hermes Agent 接入微信]]
+- `AI agent toolkit` / `coding agent harness`：[[Pi]]、[[Pi 的可扩展 Agent Harness]]、[[Pi 上手与扩展路线]]
 
 ## 当前资源
 
@@ -28,11 +29,15 @@ confidence: medium
 | 操作手册 | [[Hermes Agent 接入微信]] | `raw/A_AI-Agent-Tech-Stack/H_Hermes-Agent/T_Tutorials(教程)/Hermes Agent教程 - 接入微信.md` | 后续补全微信接入步骤和排障 |
 | 文章 / 方法论 | [[LLM Knowledge Bases]] | `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md` | LLM 维护个人知识库、raw/wiki 分层、Obsidian 前端与 lint 工作流 |
 | 方法论 / 工具栈 | [[LLM Wiki]] | `raw/A_AI-Agent-Tech-Stack/L_LLM-Wiki/LLM Wiki 详解.md` | 系统解释 LLM Wiki 的定义、分层、工作流、页面设计、lint 和 AI-Master 落地方式 |
+| 项目 / Agent Toolkit | [[Pi]] | `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-root-readme.md` | 记录 `Pi` 的整体定位、分层结构、工程取向和扩展边界 |
+| 概念 / Agent Harness | [[Pi 的可扩展 Agent Harness]] | `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-extensions.md` | 拆解 `Pi` 的三层架构，以及 `skills`、`extensions`、`packages`、`custom providers` 的角色分工 |
+| 操作手册 | [[Pi 上手与扩展路线]] | `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-quickstart.md` | 整理 `Pi` 的安装、认证、首次会话和扩展机制选择路径 |
 
 ## 后续扩展
 
 - 对人物类资料补充：代表文章、课程、视频、观点、项目。
 - 对工具类资料补充：安装、配置、使用场景、踩坑、最佳实践。
+- 对 `Agent Harness` / `coding agent toolkit` 类资料补充：架构分层、可扩展接口、`provider` 策略和项目级接入路线。
 - 对教程类资料补充：步骤、验证、错误处理、安全事项。
 - 对文章/方法论类资料补充：核心论点、工作流、可复用模板、与本知识库结构的映射。
 - 每次新增 raw 目录后，优先判断是否应更新本资源索引。

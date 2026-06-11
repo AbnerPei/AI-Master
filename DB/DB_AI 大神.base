@@ -10,6 +10,9 @@ views:
       - file.name
       - file.ctime
       - tags
+    sort:
+      - property: file.ctime
+        direction: DESC
     cardSize: 250
     image: note.author_url
     imageAspectRatio: 1

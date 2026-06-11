@@ -12,6 +12,97 @@
 
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-05-22] ingest | 补充 YouTube AI 大神 Hung-yi Lee 资料
+- Added raw file: `raw/A_AI-Gurus(AI大神)/AI 大神 - Hung-yi Lee.md`。
+- Source: YouTube 频道 `https://www.youtube.com/@HungyiLeeNTU`，平台识别为 `YouTube`。
+- Updated: `raw/source-manifest.md`，刷新 AI 大神文件数量与文件级 SHA-256。
+
+## [2026-05-30] ingest | 整理 `earendil-works/pi` 项目资料
+- Added raw directory: `raw/A_AI-Agent-Tech-Stack/P_Pi/`，包含 `README`、`quickstart`、`extensions`、`skills`、`packages`、`custom providers`、`pi-ai`、`pi-agent-core` 和 `GitHub API` 快照共 `9` 份来源页。
+- Added assets: `raw/A_Assets(素材)/P_Pi/`，包含 `3` 张基于 `image-2` 生成的 `Pi` 文档配图。
+- Created wiki pages: `wiki/P_Projects(项目)/Pi.md`、`wiki/C_Concepts(概念)/Pi 的可扩展 Agent Harness.md`、`wiki/P_Playbooks(操作手册)/Pi 上手与扩展路线.md`。
+- Updated: `wiki/index.md`、`wiki/M_Meta(元信息)/AI 资源索引.md`、`raw/source-manifest.md`。
+
+## [2026-05-19] create | 新增 `OpenSpec` 命令详解与配图操作手册
+- Created wiki page: `wiki/P_Playbooks(操作手册)/OpenSpec 命令与使用详解.md`
+- Added assets: `raw/A_Assets(素材)/O_OpenSpec/` 下 9 张 `OpenSpec` 主题配图，风格参考来自用户指定的 `image - 2`。
+- Purpose: 系统解释 `OpenSpec` 的 `CLI` 命令、`/opsx:*` 工作流命令、实战使用路径、版本差异和常见误区。
+- Updated: `wiki/index.md`、`raw/source-manifest.md`
+
+## [2026-05-19] update | 升级 `Codex` `GitHub bounty Agent` 手册为目标驱动型版本
+- Updated wiki page: `wiki/P_Playbooks(操作手册)/Codex GitHub bounty Agent 搭建手册.md`
+- Change: 从“半自动执行助手”重写为“目标驱动型自主 `Agent`”手册，新增每周 `100` 美元目标拆解、`零资本投入` 边界、机会评分模型、自动回复策略、状态机和高自主系统提示词。
+
+## [2026-05-19] create | 新增 `Codex` `GitHub bounty Agent` 搭建手册
+- Created wiki page: `wiki/P_Playbooks(操作手册)/Codex GitHub bounty Agent 搭建手册.md`
+- Purpose: 把“如何做一个能自己找 `bounty`、改代码、提 `PR` 的 `Agent`”整理成可执行手册，明确阶段路线、选题规则、执行清单、提示词骨架和一周试运行方案。
+- Updated: `wiki/index.md`
+
+## [2026-05-18] ingest | 补充视频号 AI 创作者未来博士wepon资料
+- Added raw file: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 未来博士wepon.md`。
+- Source: 微信视频号短链 `https://weixin.qq.com/sph/ArbFUY5yqw`，平台识别为 `视频号`。
+- Updated: `raw/source-manifest.md`，刷新 AI 创作者文件数量与文件级 SHA-256。
+
+## [2026-05-17] ingest | 补充视频号 AI 创作者聂风KIKI的创业成长资料
+- Added raw file: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 聂风KIKI的创业成长.md`。
+- Source: 微信视频号短链 `https://weixin.qq.com/sph/AAe3RrsrPJ`，平台识别为 `视频号`。
+- Updated: `raw/source-manifest.md`，刷新 AI 创作者文件数量与文件级 SHA-256。
+
+## [2026-05-17] create | 新增 `OpenSpec` 安装与使用操作手册
+- Created wiki page: `wiki/P_Playbooks(操作手册)/OpenSpec 安装与使用.md`
+- Purpose: 记录 `OpenSpec` 的本机安装结果、`Node.js` 版本切换、`Codex` 适配初始化命令和常用 `CLI` 用法。
+- Updated: `wiki/index.md`
+
+## [2026-05-17] ingest | 补充视频号 AI 创作者杨彧鑫AI资料
+- Added raw file: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 杨彧鑫AI.md`。
+- Source: 微信视频号短链 `https://weixin.qq.com/sph/AKhY3c3eUZ`，平台识别为 `视频号`。
+- Updated: `raw/source-manifest.md`，刷新 AI 创作者文件数量与文件级 SHA-256。
+
+## [2026-05-14] ingest | 补充 YouTube AI 创作者秋芝2046资料
+- Added raw file: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 秋芝2046.md`。
+- Source: YouTube 频道 `https://www.youtube.com/@qiuzhi2046`，平台识别为 `YouTube`。
+- Updated: `raw/source-manifest.md`，刷新 AI 创作者文件数量与文件级 SHA-256。
+
+## [2026-05-12] ingest | 补充视频号 AI 大神傅盛讲AI资料
+- Added raw file: `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI.md`。
+- Source: 微信视频号短链 `https://weixin.qq.com/sph/At1xESEPjT`，平台识别为 `视频号`。
+- Updated: `raw/source-manifest.md`，刷新 AI 大神文件数量与文件级 SHA-256。
+
+## [2026-05-12] update | 时间轴追加微信视频号待整理链接
+- Updated file: `Timeline/2026/2026-05 学习时间线.md`。
+- Added entry: 新增 `https://weixin.qq.com/sph/At1xESEPjT` 到当天时间轴，先按待整理条目落盘，后续再补内容摘要和个人理解。
+
+## [2026-05-12] update | 切换 `Timeline` 到自定义 `AIHOT` 风格插件
+- Updated files: `Timeline/2026/2026-05 学习时间线.md`、`Timeline/模板/学习时间线模板.md`、`Timeline/模板/学习条目模板.md`、`Timeline/时间线使用说明.md`、`SCHEMA.md`。
+- Change: 将月文件和模板从旧的 `easy-timeline` / `timeline` 首行元数据写法切换为自定义插件 `timeline` 的 `aihot-timeline` `YAML` 条目语法。
+- Updated: `.obsidian/appearance.json`，移除仅服务旧时间线方案的 `时间线卡片纵向布局` `CSS snippet`。
+
+## [2026-05-12] update | 修正 `aihot-timeline` 条目中的 `YAML` 标量写法
+- Updated files: `Timeline/2026/2026-05 学习时间线.md`、`Timeline/模板/学习时间线模板.md`、`Timeline/模板/学习条目模板.md`、`Timeline/时间线使用说明.md`。
+- Change: 将包含反引号等 `Markdown` 符号的字段值改为带引号的合法 `YAML` 字符串，并将 `tags` 保持为纯文本标签，避免解析失败。
+
+## [2026-05-12] update | 调整 `Timeline` 渲染结构与卡片布局
+- Updated files: `Timeline/2026/2026-05 学习时间线.md`、`Timeline/模板/学习时间线模板.md`、`Timeline/模板/学习条目模板.md`、`Timeline/时间线使用说明.md`。
+- Added snippet: `.obsidian/snippets/时间线卡片纵向布局.css`，将同日多卡片改为纵向堆叠，并隐藏卡片正文里重复的首行日期元数据。
+- Updated: `.obsidian/appearance.json`，启用 `时间线卡片纵向布局` `CSS snippet`。
+
+## [2026-05-12] update | 将 `Timeline` 条目正文改为 `callout`
+- Updated files: `Timeline/2026/2026-05 学习时间线.md`、`Timeline/模板/学习时间线模板.md`、`Timeline/模板/学习条目模板.md`、`Timeline/时间线使用说明.md`。
+- Change: 将条目正文中的 `笔记`、`摘句`、`我的理解`、`下一步` 改为 `Obsidian callout` 写法，便于在时间线卡片内形成清晰分区。
+
+## [2026-05-12] update | 隐藏时间线首行元数据正文回显
+- Updated files: `Timeline/2026/2026-05 学习时间线.md`、`Timeline/模板/学习时间线模板.md`、`Timeline/模板/学习条目模板.md`、`Timeline/时间线使用说明.md`。
+- Change: 将时间线首行日期与 `[title::]` / `[icon::]` / `[status::]` 元数据改为 `HTML comment`，避免正文里继续显示 `video`、`success` 等解析辅助字段。
+
+## [2026-05-12] update | 补充 `Timeline` 学习记录
+- Updated file: `Timeline/2026/2026-05 学习时间线.md`。
+- Added entry: `2026-05-12 06:40` 的 `YouTube` 学习记录，主题是对 `Agent`、简单 `Agent` 创建方式和 `ReAct` 工作模式的初步理解。
+
+## [2026-05-12] create | 新增 Timeline 学习时间线目录
+- Added root directory: `Timeline/`，包含 `时间线使用说明.md`、`模板/学习时间线模板.md`、`模板/学习条目模板.md`、`2026/2026-05 学习时间线.md`。
+- Configured plugin: 新增 `.obsidian/plugins/easy-timeline/data.json`，将 `easy-timeline` 的参考字段设置为 `创建日期`，默认排序设为 `desc`。
+- Updated: `README.md`、`SCHEMA.md`，将 `Timeline/` 纳入知识库结构和使用规则。
+
 ## [2026-05-11] update | 将 AI 工具导航收藏改为时间轴卡片呈现
 - Updated raw file: `raw/A_Tools(工具)/A_AI-Tool-Directories(AI工具导航)/AI 工具导航与信息源收藏.md`。
 - Change: 将原表格改为参考 `AIHOT` 的“日期分组 + 上下时间轴 + 网址卡片 + 推荐理由 + 下一步动作”结构。

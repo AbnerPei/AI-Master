@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.inFolder("raw/A_Tools(工具)/skills")
+    - not:
+        - file.name == "readme"
+views:
+  - type: table
+    name: Skills
+    order:
+      - file.basename
+      - 简介
+      - file.ctime
+    sort:
+      - property: 创建日期
+        direction: DESC
+    markers: none
+    indentProperties: true
+    columnSize:
+      note.简介: 526

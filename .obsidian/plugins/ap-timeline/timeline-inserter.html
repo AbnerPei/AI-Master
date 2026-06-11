@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP Timeline Inserter</title>
+  <style>
+    :root {
+      --bg: #f5efe4;
+      --panel: rgba(255, 252, 246, 0.92);
+      --panel-strong: #fffaf0;
+      --line: rgba(91, 68, 45, 0.12);
+      --line-strong: rgba(91, 68, 45, 0.24);
+      --text: #2d241b;
+      --muted: #6d5a47;
+      --accent: #c65b2d;
+      --accent-strong: #9f3d16;
+      --accent-soft: rgba(198, 91, 45, 0.12);
+      --shadow: 0 18px 44px rgba(82, 57, 31, 0.12);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font-family: "Avenir Next", "PingFang SC", "Hiragino Sans GB", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.72), transparent 34%),
+        linear-gradient(180deg, #f7f1e6 0%, #f1e7d7 100%);
+    }
+
+    .page {
+      width: min(1360px, calc(100vw - 32px));
+      margin: 24px auto 40px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.9fr);
+      gap: 20px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero {
+      padding: 28px 30px 24px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -5% -30% auto;
+      width: 280px;
+      height: 280px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(198, 91, 45, 0.18), transparent 68%);
+      pointer-events: none;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      margin: 14px 0 0;
+      max-width: 780px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .hero-actions,
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 18px;
+      cursor: pointer;
+      transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+    }
+
+    .primary-btn {
+      background: linear-gradient(135deg, var(--accent) 0%, #dd8150 100%);
+      color: #fff7f2;
+      box-shadow: 0 10px 24px rgba(198, 91, 45, 0.24);
+    }
+
+    .ghost-btn {
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .layout-left {
+      display: grid;
+      gap: 20px;
+    }
+
+    .form-card {
+      padding: 24px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: 21px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-head span,
+    .field-hint,
+    .status,
+    .help-list li {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid.cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid.cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    label.field {
+      display: grid;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+      padding: 12px 14px;
+      color: var(--text);
+      outline: none;
+      transition: border-color 120ms ease, box-shadow 120ms ease;
+    }
+
+    textarea {
+      min-height: 124px;
+      resize: vertical;
+      line-height: 1.6;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: rgba(198, 91, 45, 0.5);
+      box-shadow: 0 0 0 4px rgba(198, 91, 45, 0.12);
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--text);
+    }
+
+    .toggle-row input {
+      width: auto;
+      margin: 0;
+    }
+
+    .image-items {
+      display: grid;
+      gap: 14px;
+    }
+
+    .image-item {
+      padding: 16px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    .image-item-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .image-item-toolbar strong {
+      font-size: 14px;
+      letter-spacing: 0.02em;
+    }
+
+    .image-remove-btn {
+      padding: 8px 12px;
+      background: rgba(159, 61, 22, 0.08);
+      color: var(--accent-strong);
+      border: 1px solid rgba(159, 61, 22, 0.14);
+    }
+
+    .sidebar {
+      display: grid;
+      gap: 20px;
+      align-content: start;
+      position: sticky;
+      top: 24px;
+      height: fit-content;
+    }
+
+    .sidebar-card {
+      padding: 22px;
+    }
+
+    pre {
+      margin: 0;
+      overflow: auto;
+      padding: 18px;
+      border-radius: 18px;
+      background: #231b14;
+      color: #f8f0df;
+      font-family: "SFMono-Regular", "JetBrains Mono", monospace;
+      font-size: 13px;
+      line-height: 1.65;
+      min-height: 280px;
+    }
+
+    .status {
+      margin-top: 14px;
+      min-height: 24px;
+      line-height: 1.5;
+    }
+
+    .status.is-error {
+      color: #a63f1d;
+    }
+
+    .status.is-success {
+      color: #216b44;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .badge {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-strong);
+      font-size: 13px;
+    }
+
+    .help-list {
+      padding-left: 18px;
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 1120px) {
+      .page {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(100vw - 20px, 100%);
+        margin-top: 10px;
+      }
+
+      .hero,
+      .form-card,
+      .sidebar-card {
+        padding: 18px;
+      }
+
+      .grid.cols-2,
+      .grid.cols-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="layout-left">
+      <section class="panel hero">
+        <h1>AP Timeline Inserter</h1>
+        <p>这个录入页会生成 `ap-timeline` 条目，并在点击“插入”后，自动按 `date / time` 写入或创建目标 Markdown 里的时间轴代码块。图片支持 `![[本地图片.png]]`、相对路径和远程 URL。</p>
+        <div class="hero-actions">
+          <button id="pick-file-btn" class="primary-btn" type="button">选择并写回 Markdown</button>
+          <button id="import-file-btn" class="ghost-btn" type="button">导入 Markdown 副本</button>
+          <button id="copy-yaml-btn" class="ghost-btn" type="button">复制当前 YAML</button>
+        </div>
+        <div class="badge-row">
+          <span class="badge" id="file-mode-badge">未载入文件</span>
+          <span class="badge" id="block-count-badge">检测到 0 个 ap-timeline 代码块</span>
+          <span class="badge">默认排序：最新在上</span>
+        </div>
+        <input id="import-file-input" class="hidden" type="file" accept=".md,.markdown,text/markdown">
+      </section>
+
+      <section class="panel form-card">
+        <div class="section-head">
+          <h2>文件与插入选项</h2>
+          <span>支持多 timeline 代码块时指定序号</span>
+        </div>
+        <div class="grid cols-3">
+          <label class="field">
+            <span>目标文件</span>
+            <input id="target-file-name" type="text" value="未载入" readonly>
+          </label>
+          <label class="field">
+            <span>插入到第几个 `ap-timeline`</span>
+            <input id="block-index" type="number" min="1" step="1" value="1">
+          </label>
+          <label class="field">
+            <span>排序方向</span>
+            <select id="sort-order">
+              <option value="desc">最新在上</option>
+              <option value="asc">最早在上</option>
+            </select>
+          </label>
+        </div>
+        <div class="status" id="status-text"></div>
+      </section>
+
+      <section class="panel form-card">
+        <div class="section-head">
+          <h2>基础字段</h2>
+          <span>只会写入你实际填了的字段</span>
+        </div>
+        <div class="grid cols-3">
+          <label class="field">
+            <span>date</span>
+            <input id="date" type="date">
+          </label>
+          <label class="field">
+            <span>time</span>
+            <input id="time" type="time">
+          </label>
+          <label class="field">
+            <span>heat</span>
+            <input id="heat" type="text" placeholder="70">
+          </label>
+          <label class="field">
+            <span>source</span>
+            <input id="source" type="text" placeholder="留空时按插件设置显示默认来源">
+          </label>
+          <label class="field">
+            <span>sourceUrl</span>
+            <input id="source-url" type="url" placeholder="https://example.com">
+          </label>
+          <label class="field">
+            <span>author</span>
+            <input id="author" type="text" placeholder="作者 / 记录人">
+          </label>
+          <label class="field">
+            <span>title</span>
+            <input id="title" type="text" placeholder="标题或 [[本地双链]]">
+          </label>
+          <label class="field">
+            <span>url</span>
+            <input id="url" type="url" placeholder="https://example.com">
+          </label>
+          <label class="field">
+            <span>featuredLabel</span>
+            <input id="featured-label" type="text" placeholder="精选 / 重点 / 无">
+          </label>
+        </div>
+        <div class="grid cols-2" style="margin-top: 14px;">
+          <label class="field">
+            <span>tags</span>
+            <input id="tags" type="text" placeholder="创业者, 雷军, 马斯克">
+          </label>
+          <label class="field">
+            <span>featured</span>
+            <span class="toggle-row">
+              <input id="featured" type="checkbox">
+              <span>勾选后输出 `featured: true`</span>
+            </span>
+          </label>
+        </div>
+      </section>
+
+      <section class="panel form-card">
+        <div class="section-head">
+          <h2>正文与扩展</h2>
+          <span>正文、理由、讨论、备注均支持 Markdown / Obsidian 语法</span>
+        </div>
+        <div class="grid cols-2">
+          <label class="field">
+            <span>content</span>
+            <textarea id="content" placeholder="支持引用、列表、[[双链]]、代码块等"></textarea>
+          </label>
+          <label class="field">
+            <span>reason</span>
+            <textarea id="reason" placeholder="推荐理由 / 重点说明"></textarea>
+          </label>
+          <label class="field">
+            <span>discussions</span>
+            <textarea id="discussions" placeholder="- [相关讨论](https://...)&#10;- [[本地讨论]]"></textarea>
+          </label>
+          <label class="field">
+            <span>note</span>
+            <textarea id="note" placeholder="补充备注"></textarea>
+          </label>
+        </div>
+      </section>
+
+      <section class="panel form-card">
+        <div class="section-head">
+          <h2>独立媒体</h2>
+          <span>单个 item 直接挂图或 YouTube，不必放进 `images` 列表</span>
+        </div>
+        <div class="grid cols-2">
+          <label class="field">
+            <span>video / media src</span>
+            <input id="media-src" type="text" placeholder="![[cover.png]] / ./cover.png / https://youtu.be/...">
+          </label>
+          <label class="field">
+            <span>mediaAlt</span>
+            <input id="media-alt" type="text" placeholder="媒体 alt 文案">
+          </label>
+          <label class="field">
+            <span>mediaCaption</span>
+            <textarea id="media-caption" placeholder="独立媒体的说明文字"></textarea>
+          </label>
+          <label class="field">
+            <span>isResume</span>
+            <span class="toggle-row">
+              <input id="media-resume" type="checkbox">
+              <span>YouTube 滑出后滑回时支持恢复播放</span>
+            </span>
+          </label>
+        </div>
+      </section>
+
+      <section class="panel form-card">
+        <div class="section-head">
+          <h2>横向图片 / 视频列表</h2>
+          <span>可无限添加，每一项都支持本地图片、说明文案和 progress 配置</span>
+        </div>
+        <div class="toolbar">
+          <button id="add-image-btn" class="ghost-btn" type="button">新增图片项</button>
+        </div>
+        <div class="image-items" id="image-items"></div>
+      </section>
+
+      <section class="panel form-card">
+        <div class="section-head">
+          <h2>执行</h2>
+          <span>会自动插入到目标时间轴，并按时间排序</span>
+        </div>
+        <div class="toolbar">
+          <button id="insert-btn" class="primary-btn" type="button">插入到 Markdown</button>
+          <button id="reset-btn" class="ghost-btn" type="button">重置表单</button>
+        </div>
+      </section>
+    </section>
+
+    <aside class="sidebar">
+      <section class="panel sidebar-card">
+        <div class="section-head">
+          <h2>YAML 预览</h2>
+          <span>会实时更新</span>
+        </div>
+        <pre id="yaml-preview"></pre>
+      </section>
+
+      <section class="panel sidebar-card">
+        <div class="section-head">
+          <h2>使用说明</h2>
+          <span>推荐顺序</span>
+        </div>
+        <ol class="help-list">
+          <li>优先点击“选择并写回 Markdown”。浏览器支持写回时，会直接更新原文件。</li>
+          <li>如果当前环境不支持直写，使用“导入 Markdown 副本”，插入后会自动下载更新后的 `.md` 文件。</li>
+          <li>同一文件有多个 `ap-timeline` 代码块时，把“插入到第几个”改成对应序号。</li>
+          <li>图片 `src` 可以写 `![[本地图片.png]]`、相对路径、绝对 vault 路径或远程 URL。</li>
+          <li>如果目标 Markdown 里还没有 `ap-timeline` 代码块，插入时会自动在文末创建一个。</li>
+        </ol>
+      </section>
+    </aside>
+  </main>
+
+  <script type="module">
+    import {
+      buildTimelineEntry,
+      createDefaultFormState,
+      findTimelineBlocks,
+      insertTimelineEntry,
+      serializeTimelineEntry
+    } from "./timeline-inserter-core.js";
+
+    const state = {
+      fileHandle: null,
+      fileName: "",
+      sourceMarkdown: "",
+      canWriteDirectly: false,
+      images: []
+    };
+
+    const refs = {
+      importFileInput: document.getElementById("import-file-input"),
+      pickFileBtn: document.getElementById("pick-file-btn"),
+      importFileBtn: document.getElementById("import-file-btn"),
+      copyYamlBtn: document.getElementById("copy-yaml-btn"),
+      addImageBtn: document.getElementById("add-image-btn"),
+      insertBtn: document.getElementById("insert-btn"),
+      resetBtn: document.getElementById("reset-btn"),
+      yamlPreview: document.getElementById("yaml-preview"),
+      statusText: document.getElementById("status-text"),
+      targetFileName: document.getElementById("target-file-name"),
+      fileModeBadge: document.getElementById("file-mode-badge"),
+      blockCountBadge: document.getElementById("block-count-badge"),
+      imageItems: document.getElementById("image-items"),
+      blockIndex: document.getElementById("block-index"),
+      sortOrder: document.getElementById("sort-order"),
+      date: document.getElementById("date"),
+      time: document.getElementById("time"),
+      heat: document.getElementById("heat"),
+      source: document.getElementById("source"),
+      sourceUrl: document.getElementById("source-url"),
+      author: document.getElementById("author"),
+      title: document.getElementById("title"),
+      url: document.getElementById("url"),
+      featuredLabel: document.getElementById("featured-label"),
+      featured: document.getElementById("featured"),
+      tags: document.getElementById("tags"),
+      content: document.getElementById("content"),
+      reason: document.getElementById("reason"),
+      discussions: document.getElementById("discussions"),
+      note: document.getElementById("note"),
+      mediaSrc: document.getElementById("media-src"),
+      mediaAlt: document.getElementById("media-alt"),
+      mediaCaption: document.getElementById("media-caption"),
+      mediaResume: document.getElementById("media-resume")
+    };
+
+    initialize();
+
+    function initialize() {
+      applyFormState(createDefaultFormState());
+      bindEvents();
+      renderImages();
+      updatePreview();
+      updateFileMeta();
+    }
+
+    function bindEvents() {
+      refs.pickFileBtn.addEventListener("click", handlePickFile);
+      refs.importFileBtn.addEventListener("click", () => refs.importFileInput.click());
+      refs.importFileInput.addEventListener("change", handleImportFile);
+      refs.copyYamlBtn.addEventListener("click", handleCopyYaml);
+      refs.addImageBtn.addEventListener("click", () => {
+        state.images.push(createEmptyImageItem());
+        renderImages();
+        updatePreview();
+      });
+      refs.insertBtn.addEventListener("click", handleInsert);
+      refs.resetBtn.addEventListener("click", handleReset);
+
+      document.querySelectorAll("input, textarea, select").forEach((element) => {
+        if (element === refs.importFileInput) {
+          return;
+        }
+        element.addEventListener("input", updatePreview);
+        element.addEventListener("change", updatePreview);
+      });
+    }
+
+    async function handlePickFile() {
+      if (typeof window.showOpenFilePicker !== "function") {
+        setStatus("当前环境不支持直接写回文件，请改用“导入 Markdown 副本”。", "error");
+        return;
+      }
+
+      try {
+        const [handle] = await window.showOpenFilePicker({
+          multiple: false,
+          types: [{
+            description: "Markdown",
+            accept: {
+              "text/markdown": [".md", ".markdown"],
+              "text/plain": [".md", ".markdown"]
+            }
+          }]
+        });
+
+        const file = await handle.getFile();
+        state.fileHandle = handle;
+        state.fileName = file.name;
+        state.sourceMarkdown = await file.text();
+        state.canWriteDirectly = true;
+        updateFileMeta();
+        setStatus(`已载入 ${file.name}，插入后会直接写回原文件。`, "success");
+      } catch (error) {
+        if (error?.name === "AbortError") {
+          return;
+        }
+        setStatus(`选择文件失败：${error instanceof Error ? error.message : String(error)}`, "error");
+      }
+    }
+
+    async function handleImportFile(event) {
+      const input = event.target;
+      const file = input.files?.[0];
+      if (!file) {
+        return;
+      }
+
+      state.fileHandle = null;
+      state.fileName = file.name;
+      state.sourceMarkdown = await file.text();
+      state.canWriteDirectly = false;
+      updateFileMeta();
+      setStatus(`已导入 ${file.name} 的副本，插入后会下载一份更新后的文件。`, "success");
+      input.value = "";
+    }
+
+    async function handleCopyYaml() {
+      try {
+        const yaml = getCurrentYaml();
+        await navigator.clipboard.writeText(yaml);
+        setStatus("当前 YAML 已复制到剪贴板。", "success");
+      } catch (error) {
+        setStatus(`复制失败：${error instanceof Error ? error.message : String(error)}`, "error");
+      }
+    }
+
+    async function handleInsert() {
+      try {
+        const yaml = getCurrentYaml();
+        const result = insertTimelineEntry(state.sourceMarkdown, yaml, {
+          blockIndex: Number(refs.blockIndex.value || 1),
+          sortOrder: refs.sortOrder.value
+        });
+
+        state.sourceMarkdown = result.markdown;
+        updateFileMeta();
+
+        if (state.canWriteDirectly && state.fileHandle) {
+          const writable = await state.fileHandle.createWritable();
+          await writable.write(result.markdown);
+          await writable.close();
+          setStatus(
+            result.createdBlock
+              ? `已写回 ${state.fileName}，并自动创建第 1 个 ap-timeline 代码块。`
+              : `已写回 ${state.fileName} 的第 ${result.insertedBlockIndex} 个 ap-timeline 代码块。`,
+            "success"
+          );
+          return;
+        }
+
+        const downloadName = state.fileName || "ap-timeline-updated.md";
+        downloadText(downloadName, result.markdown);
+        setStatus(
+          result.createdBlock
+            ? `已生成更新后的 ${downloadName}，并自动创建 ap-timeline 代码块。`
+            : `已生成更新后的 ${downloadName}，条目已插入第 ${result.insertedBlockIndex} 个 ap-timeline 代码块。`,
+          "success"
+        );
+      } catch (error) {
+        setStatus(`插入失败：${error instanceof Error ? error.message : String(error)}`, "error");
+      }
+    }
+
+    function handleReset() {
+      state.images = [];
+      applyFormState(createDefaultFormState());
+      renderImages();
+      updatePreview();
+      setStatus("表单已重置。", "success");
+    }
+
+    function applyFormState(formState) {
+      refs.date.value = formState.date;
+      refs.time.value = formState.time;
+      refs.heat.value = formState.heat;
+      refs.source.value = formState.source;
+      refs.sourceUrl.value = formState.sourceUrl;
+      refs.author.value = formState.author;
+      refs.title.value = formState.title;
+      refs.url.value = formState.url;
+      refs.featuredLabel.value = formState.featuredLabel;
+      refs.featured.checked = formState.featured;
+      refs.tags.value = formState.tags;
+      refs.content.value = formState.content;
+      refs.reason.value = formState.reason;
+      refs.discussions.value = formState.discussions;
+      refs.note.value = formState.note;
+      refs.mediaSrc.value = formState.mediaSrc;
+      refs.mediaAlt.value = formState.mediaAlt;
+      refs.mediaCaption.value = formState.mediaCaption;
+      refs.mediaResume.checked = formState.mediaResume;
+    }
+
+    function createEmptyImageItem() {
+      return {
+        src: "",
+        caption: "",
+        alt: "",
+        progress: "",
+        isProgressColorful: false,
+        isResume: false
+      };
+    }
+
+    function renderImages() {
+      refs.imageItems.innerHTML = "";
+
+      if (state.images.length === 0) {
+        const empty = document.createElement("div");
+        empty.className = "field-hint";
+        empty.textContent = "还没有图片项。点击“新增图片项”开始添加。";
+        refs.imageItems.appendChild(empty);
+        return;
+      }
+
+      state.images.forEach((image, index) => {
+        const wrapper = document.createElement("section");
+        wrapper.className = "image-item";
+        wrapper.innerHTML = `
+          <div class="image-item-toolbar">
+            <strong>图片项 ${index + 1}</strong>
+            <button class="image-remove-btn" type="button" data-index="${index}">删除</button>
+          </div>
+          <div class="grid cols-2">
+            <label class="field">
+              <span>src</span>
+              <input type="text" data-field="src" data-index="${index}" placeholder="![[20260517_001.png]] / ./cover.png / https://...">
+            </label>
+            <label class="field">
+              <span>alt</span>
+              <input type="text" data-field="alt" data-index="${index}" placeholder="图片 alt">
+            </label>
+            <label class="field">
+              <span>caption</span>
+              <textarea data-field="caption" data-index="${index}" placeholder="图片说明，支持换行和 Markdown"></textarea>
+            </label>
+            <div class="grid">
+              <label class="field">
+                <span>progress</span>
+                <input type="number" min="1" max="8" step="1" data-field="progress" data-index="${index}" placeholder="1-8">
+              </label>
+              <label class="field">
+                <span>炫彩 progress</span>
+                <span class="toggle-row">
+                  <input type="checkbox" data-field="isProgressColorful" data-index="${index}">
+                  <span>输出 `isProgressColorful: true`</span>
+                </span>
+              </label>
+              <label class="field">
+                <span>自动恢复播放</span>
+                <span class="toggle-row">
+                  <input type="checkbox" data-field="isResume" data-index="${index}">
+                  <span>输出 `isResume: true`</span>
+                </span>
+              </label>
+            </div>
+          </div>
+        `;
+
+        refs.imageItems.appendChild(wrapper);
+
+        wrapper.querySelectorAll("[data-field]").forEach((element) => {
+          const field = element.getAttribute("data-field");
+          if (element instanceof HTMLInputElement && element.type === "checkbox") {
+            element.checked = Boolean(image[field]);
+          } else {
+            element.value = image[field] ?? "";
+          }
+
+          const handler = () => {
+            const target = state.images[index];
+            if (!target) {
+              return;
+            }
+            if (element instanceof HTMLInputElement && element.type === "checkbox") {
+              target[field] = element.checked;
+            } else {
+              target[field] = element.value;
+            }
+            updatePreview();
+          };
+
+          element.addEventListener("input", handler);
+          element.addEventListener("change", handler);
+        });
+
+        wrapper.querySelector(".image-remove-btn")?.addEventListener("click", () => {
+          state.images.splice(index, 1);
+          renderImages();
+          updatePreview();
+        });
+      });
+    }
+
+    function getCurrentFormState() {
+      return {
+        date: refs.date.value,
+        time: refs.time.value,
+        source: refs.source.value,
+        sourceUrl: refs.sourceUrl.value,
+        heat: refs.heat.value,
+        author: refs.author.value,
+        featured: refs.featured.checked,
+        featuredLabel: refs.featuredLabel.value,
+        title: refs.title.value,
+        url: refs.url.value,
+        mediaSrc: refs.mediaSrc.value,
+        mediaCaption: refs.mediaCaption.value,
+        mediaAlt: refs.mediaAlt.value,
+        mediaResume: refs.mediaResume.checked,
+        tags: refs.tags.value,
+        content: refs.content.value,
+        reason: refs.reason.value,
+        discussions: refs.discussions.value,
+        note: refs.note.value,
+        images: state.images
+      };
+    }
+
+    function getCurrentYaml() {
+      const entry = buildTimelineEntry(getCurrentFormState());
+      return serializeTimelineEntry(entry);
+    }
+
+    function updatePreview() {
+      try {
+        refs.yamlPreview.textContent = getCurrentYaml() || "";
+        setStatus("", "");
+      } catch (error) {
+        refs.yamlPreview.textContent = "";
+        setStatus(`当前表单还不能生成 YAML：${error instanceof Error ? error.message : String(error)}`, "error");
+      }
+    }
+
+    function updateFileMeta() {
+      const blockCount = findTimelineBlocks(state.sourceMarkdown).length;
+      refs.targetFileName.value = state.fileName || "未载入";
+      refs.blockCountBadge.textContent = `检测到 ${blockCount} 个 ap-timeline 代码块`;
+      refs.fileModeBadge.textContent = state.canWriteDirectly
+        ? "直写模式"
+        : state.fileName
+          ? "下载更新文件"
+          : "未载入文件";
+    }
+
+    function setStatus(message, type) {
+      refs.statusText.textContent = message;
+      refs.statusText.classList.remove("is-error", "is-success");
+      if (type === "error") {
+        refs.statusText.classList.add("is-error");
+      }
+      if (type === "success") {
+        refs.statusText.classList.add("is-success");
+      }
+    }
+
+    function downloadText(fileName, content) {
+      const blob = new Blob([content], { type: "text/markdown;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>

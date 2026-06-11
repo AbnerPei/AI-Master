@@ -5,6 +5,8 @@
     "tags": "tags",
     "ingested": "date",
     "创建日期": "datetime",
-    "date": "datetime"
+    "date": "datetime",
+    "updated": "datetime",
+    "source_url": "multitext"
   }
 }
