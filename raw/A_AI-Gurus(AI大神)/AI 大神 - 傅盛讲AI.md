@@ -17,3 +17,7 @@ author_url: https://wx.qlogo.cn/finderhead/ver_1/xJz5gQMuZhNkRR0t5ZOrpKYZhclc9w5
 
 ### 平台
 - [**视频号**](https://channels.weixin.qq.com/finder-preview/pages/sph?id=At1xESEPjT)
+
+### 资料索引
+- [[AI 大神 - 傅盛讲AI/来源索引]]
+- [[AI 大神 - 傅盛讲AI/人物蒸馏]]

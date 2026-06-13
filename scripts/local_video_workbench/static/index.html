@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>片语蒸馏台</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar card">
+        <div class="topbar-copy">
+          <p class="eyebrow">Local Video Distillation Workbench</p>
+          <div class="topbar-title">
+            <h1>片语蒸馏台</h1>
+            <p class="subtitle">本地页面负责可视化，底层 <code>Python</code> 负责提取、整理和落盘。</p>
+          </div>
+          <p id="launchHint" class="launch-hint"></p>
+        </div>
+        <div class="hero-caps" id="capabilityCards"></div>
+      </header>
+
+      <main class="workspace">
+        <section class="card controls">
+          <div class="card-header">
+            <h2>输入配置</h2>
+            <p>第一版只支持单个本地 <code>mp4</code> 和单任务闭环。</p>
+          </div>
+
+          <div class="field-stack">
+            <label class="field">
+              <span>视频文件</span>
+              <div class="picker-row">
+                <input id="videoPath" type="text" placeholder="点击右侧按钮，调用系统文件选择器" readonly />
+                <button id="pickVideoButton" type="button" class="ghost-button">选择视频</button>
+              </div>
+            </label>
+
+            <label class="field">
+              <span>输出目录</span>
+              <div class="picker-row">
+                <input id="outputDir" type="text" placeholder="点击右侧按钮，调用系统目录选择器" readonly />
+                <button id="pickOutputButton" type="button" class="ghost-button">选择目录</button>
+              </div>
+            </label>
+          </div>
+
+          <div class="callouts">
+            <div class="callout">
+              <h3>产物清单</h3>
+              <ul>
+                <li><code>meta.json</code></li>
+                <li><code>01-raw-transcript.md</code></li>
+                <li><code>02-clean-transcript.md</code></li>
+                <li><code>03-ai-distillation.md</code></li>
+              </ul>
+            </div>
+            <div class="callout">
+              <h3>处理顺序</h3>
+              <ul>
+                <li>字幕优先</li>
+                <li>本地 <code>ASR</code></li>
+                <li>云端转录兜底</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="action-row">
+            <button id="startButton" type="button" class="primary-button">开始提取与整理</button>
+            <button id="openOutputButton" type="button" class="ghost-button" disabled>打开输出目录</button>
+          </div>
+          <p id="formMessage" class="form-message"></p>
+        </section>
+
+        <aside class="sidebar">
+          <section class="card status-panel">
+            <div class="card-header">
+              <h2>任务状态</h2>
+              <p id="jobHeadline">当前没有运行中的任务。</p>
+            </div>
+            <div id="stageList" class="stage-list"></div>
+          </section>
+
+          <section class="card log-panel">
+            <div class="card-header">
+              <h2>执行日志</h2>
+              <p>日志区固定放在右侧首屏，方便盯住阶段和原始 <code>log</code>。</p>
+            </div>
+            <div id="logStream" class="log-stream empty-state">暂无日志。</div>
+          </section>
+        </aside>
+
+        <section class="card preview-panel">
+          <div class="card-header">
+            <h2>结果预览</h2>
+            <p>任务完成后，这里会展示核心蒸馏内容和结果文件。</p>
+          </div>
+          <div id="resultFiles" class="result-files empty-state">尚未生成结果文件。</div>
+          <pre id="previewMarkdown" class="preview-markdown">等待任务完成后展示预览。</pre>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+  </html>

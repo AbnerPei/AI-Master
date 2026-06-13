@@ -2,7 +2,7 @@
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Read this first to find relevant pages for any query.
-> Last updated: 2026-05-30 | Total pages: 13
+> Last updated: 2026-06-12 | Total pages: 14
 
 ## Entities
 
@@ -33,6 +33,7 @@
 - [[OpenSpec 安装与使用]] — 记录 `OpenSpec` 的本机安装结果、`Node.js` 版本坑位，以及在 `Codex` 中初始化项目的实际命令。
 - [[OpenSpec 命令与使用详解]] — 从 `CLI` 与 `/opsx:*` 两套命令系统出发，系统解释 `OpenSpec` 的结构、工作流、常见打法与误区。
 - [[Pi 上手与扩展路线]] — 把 `Pi` 的安装、认证、首次会话和 `AGENTS.md` / `skills` / `extensions` / `packages` 选择路径整理成一页。
+- [[视频号人物蒸馏工作流]] — 把单条 `视频号` 链接沉淀成“人物主档 + 来源索引 + 人物蒸馏”结构，并定义本地视频副本与发布时间字段的处理方式。
 
 ## Projects
 

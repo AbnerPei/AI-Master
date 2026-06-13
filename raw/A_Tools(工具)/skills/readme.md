@@ -27,6 +27,7 @@ tags:
 - [maoxuan-skill](./maoxuan-skill.md)
 - [baoyu-skills](./baoyu-skills.md)
 - [ian-xiaohei-illustrations](./ian-xiaohei-illustrations.md)
+- [cheat-on-content](./cheat-on-content.md)
 
 ## 推荐浏览方式
 
@@ -43,6 +44,7 @@ tags:
 | [channels-video-processor](./channels-video-processor.md) | 查询微信视频号创作者基础信息，并可继续衔接资料卡生成流程。 |
 | [karpathy-llm-wiki](./karpathy-llm-wiki.md) | 用于维护本地 `LLM Wiki` 知识库，支持入库、查询和结构校验。 |
 | [ian-xiaohei-illustrations](./ian-xiaohei-illustrations.md) | 用于生成 `Ian` 风格中文正文配图，适合文章、帖子、方法论和工作流类内容的手绘插图生成。 |
+| [cheat-on-content](./cheat-on-content.md) | 把内容创作变成 `打分`、`盲预测`、`发布`、`复盘`、`升级 rubric` 的可校准闭环。 |
 
 ## `GitHub skill` 收录约定
 

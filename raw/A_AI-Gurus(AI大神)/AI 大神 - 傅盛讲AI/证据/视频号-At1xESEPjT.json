@@ -1,0 +1,33 @@
+{
+  "source_key": "视频号:At1xESEPjT",
+  "platform": "视频号",
+  "source_type": "video",
+  "source_id": "At1xESEPjT",
+  "title": "AI黑客松大赛让人震惊，初中生近乎夺冠，中国版盖茨快出现了#跟傅盛学AI#AI编程#VibeCoding#猎豹移动#黑客马拉松",
+  "description": "AI黑客松大赛让人震惊，初中生近乎夺冠，中国版盖茨快出现了#跟傅盛学AI#AI编程#VibeCoding#猎豹移动#黑客马拉松",
+  "seed_url": "https://channels.weixin.qq.com/finder-preview/pages/sph?id=At1xESEPjT",
+  "profile_url": "https://channels.weixin.qq.com/finder-preview/pages/sph?id=At1xESEPjT",
+  "platform_id": "At1xESEPjT",
+  "published_at": "2026-01-28T17:11:33+08:00",
+  "published_date": "",
+  "published_precision": "exact",
+  "published_source": "feedInfo.createtime",
+  "captured_at": "2026-06-12T12:54:08",
+  "download_status": "missing",
+  "download_note": "当前仅有剪藏和封面，未包含本地视频文件。",
+  "evidence_record": "raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI/证据/视频号-At1xESEPjT.json",
+  "clipping_markdown": "Clippings/视频号/AI黑客松大赛让人震惊，初中生近乎夺冠，中国版盖茨快出现了#跟傅盛学AI#AI编程#VibeCoding#猎豹移动#黑客马拉松.md",
+  "raw_source_json": "Clippings/视频号/At1xESEPjT_meta.json",
+  "original_cover_path": "Clippings/视频号/At1xESEPjT_cover.jpg",
+  "original_local_video": "",
+  "local_video_artifact": {
+    "path": "",
+    "sha256": "",
+    "size_bytes": 0
+  },
+  "cover_artifact": {
+    "path": "raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI/媒体/At1xESEPjT_cover.jpg",
+    "sha256": "d968c9116717d98e5e2c538bd2f86252bb3bcb21218d76367b28c95b5bdea223",
+    "size_bytes": 58513
+  }
+}

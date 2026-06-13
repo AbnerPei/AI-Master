@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-06-12T05:36:22",
+  "creator": {
+    "name": "李尚龙",
+    "category": "AI 大神",
+    "stars": 5,
+    "intro": "你以为的“贩卖焦虑”只是你没见过的“世界常识”#贩卖焦虑",
+    "avatar_url": "https://wx.qlogo.cn/finderhead/ver_1/VukfdmSc2IQXJ50nmIxjV1mhc6e6cJ9l9KAvC3tg2d15tyJt9K9w9mrkiayDneRDEjLibVaWn76OZHjjaVARW9XPse3cVcibrEN2e0JVJ5sAexYQWMAhZtIvibTElTm2IsAt/0",
+    "profile_url": "https://channels.weixin.qq.com/finder-preview/pages/sph?id=AU25W7Em6f",
+    "aliases": [],
+    "platform_labels": [
+      "视频号:AU25W7Em6f"
+    ],
+    "seed_sources": [
+      "https://channels.weixin.qq.com/finder-preview/pages/sph?id=AU25W7Em6f"
+    ],
+    "identity_review_notes": [],
+    "creator_card": "raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙.md"
+  },
+  "sources": [
+    {
+      "source_key": "视频号:AU25W7Em6f",
+      "platform": "视频号",
+      "source_type": "video",
+      "source_id": "AU25W7Em6f",
+      "title": "你以为的“贩卖焦虑”只是你没见过的“世界常识”贩卖焦虑",
+      "description": "你以为的“贩卖焦虑”只是你没见过的“世界常识”#贩卖焦虑",
+      "seed_url": "https://channels.weixin.qq.com/finder-preview/pages/sph?id=AU25W7Em6f",
+      "profile_url": "https://channels.weixin.qq.com/finder-preview/pages/sph?id=AU25W7Em6f",
+      "platform_id": "AU25W7Em6f",
+      "published_at": "",
+      "published_date": "",
+      "published_precision": "unknown",
+      "published_source": "existing-clipping-meta",
+      "captured_at": "2026-06-12T05:37:31",
+      "download_status": "missing",
+      "download_note": "当前仓库仅有剪藏与封面，未包含本地视频文件；如需补齐需先通过 wx_channels_download 等方式手动下载。",
+      "evidence_record": "raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙/证据/视频号-AU25W7Em6f.json",
+      "clipping_markdown": "Clippings/视频号/你以为的“贩卖焦虑”只是你没见过的“世界常识”贩卖焦虑.md",
+      "raw_source_json": "Clippings/视频号/AU25W7Em6f_meta.json",
+      "original_cover_path": "Clippings/视频号/AU25W7Em6f_cover.jpg",
+      "original_local_video": "",
+      "local_video_artifact": {
+        "path": "",
+        "sha256": "",
+        "size_bytes": 0
+      },
+      "cover_artifact": {
+        "path": "raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙/媒体/AU25W7Em6f_cover.jpg",
+        "sha256": "9ada47eada3ae97115dd14e93b95f186a3cdcb545197574b1a8688254739f8c2",
+        "size_bytes": 44622
+      }
+    }
+  ],
+  "updated_at": "2026-06-12T05:37:31"
+}

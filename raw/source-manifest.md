@@ -1,7 +1,7 @@
 # Source Manifest
 
 > AI 大师知识库 raw 层来源清单。
-> Last updated: 2026-05-30
+> Last updated: 2026-06-12
 
 ## Current Raw Layout
 
@@ -23,7 +23,7 @@
   - `raw/A_Assets(素材)/O_OpenSpec/`：`OpenSpec` 命令详解与使用手册配图，当前包含 9 张基于用户指定 `image - 2` 风格参考生成的 `PNG` 配图。
   - `raw/A_Assets(素材)/P_Pi/`：`Pi` 项目整理页配图，当前包含 3 张基于 `image-2` 生成的 `PNG` 文档插图。
   - `raw/A_Assets(素材)/A_Avatar/`：人物、创作者、账号等头像图片素材。
-- `raw/A_AI-Gurus(AI大神)/`：用户导入的 AI 人物/专家资料。
+- `raw/A_AI-Gurus(AI大神)/`：用户导入的 AI 人物/专家资料；当开始做人物蒸馏时，可在同名人物卡片旁生成配套目录，保存 `来源索引`、`人物蒸馏`、`档案.json`、`证据/` 和 `媒体/`。
 - `raw/A_AI-Content-Creator(AI 创作者)/`：用户导入的 AI 内容创作者、频道、博主等资料。
 - `raw/M_My-AI-Thoughts(我的AI思考)/`：用户关于 AI 的个人原始思考、临时观点草稿、方法论雏形；成熟后可整理到 `wiki/`。
 - `raw/A_AI-Agent-Tech-Stack/`：AI Agent 技术栈资料；Agent 相关英文术语目录保留英文原名，不加中文括注。
@@ -143,6 +143,51 @@
 - Files: 1 Markdown file + 1 JSON metadata file + 1 JPG cover image。
 - Notes: 当前保留为根目录 `Clippings/` 下的临时剪藏原始落地文件；其中人物资料已另存为 `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙.md`。
 
+### 人物蒸馏样本 | 李尚龙
+
+- Source type: 基于现有 `视频号` 剪藏派生的人物蒸馏样本，包含人物档案、来源索引、人物蒸馏、证据 `JSON` 与稳定媒体副本。
+- Target: `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙/`
+- Imported/recorded: 2026-06-12
+- Last checked: 2026-06-12
+- Files: 2 Markdown files + 2 JSON files + 1 JPG asset。
+- Notes: 由仓库内脚本 `scripts/creator_dossier.py` 基于现有 `Clippings/视频号/` 样本生成；当前本地视频文件仍缺失，发布时间精度为 `unknown`，后续可在补齐本地视频和明确发布时间后增量更新同一人物档案。
+
+### 视频号剪藏 | 傅盛讲AI
+
+- Source type: 通过 `视频号` 公开接口抓取的单条来源剪藏，包含规范化元数据、原始接口响应、封面图和剪藏 `Markdown`。
+- Target: `Clippings/视频号/`
+- Imported/recorded: 2026-06-12
+- Last checked: 2026-06-12
+- Files: 1 Markdown file + 2 JSON files + 1 JPG cover image。
+- Notes: 由仓库内脚本 `scripts/fetch_wechat_channels_source.py` 生成；当前已拿到封面和精确发布时间，但仍未拿到本地视频文件。
+
+### 人物蒸馏样本 | 傅盛讲AI
+
+- Source type: 基于 `视频号` 单条来源派生的人物蒸馏样本，包含人物档案、来源索引、人物蒸馏、证据 `JSON` 与稳定封面副本。
+- Target: `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI/`
+- Imported/recorded: 2026-06-12
+- Last checked: 2026-06-12
+- Files: 2 Markdown files + 2 JSON files + 1 JPG asset。
+- Notes: 由 `scripts/fetch_wechat_channels_source.py` 与 `scripts/creator_dossier.py` 串联生成；当前发布时间精度为 `exact`，但本地视频文件仍缺失。
+
+### 视频号剪藏 | 姜胡说
+
+- Source type: 通过 `视频号` 公开接口抓取的单条来源剪藏，包含规范化元数据、原始接口响应、封面图和剪藏 Markdown。
+- Target: `Clippings/视频号/`
+- Imported/recorded: 2026-06-12
+- Last checked: 2026-06-12
+- Files: 1 Markdown file + 2 JSON files + 1 JPG cover image。
+- Notes: 由仓库内脚本 `scripts/fetch_wechat_channels_source.py` 生成；当前已拿到封面和精确发布时间，但仍未拿到本地视频文件。
+
+### 人物蒸馏样本 | 姜胡说
+
+- Source type: 基于 `视频号` 单条来源派生的人物蒸馏样本，包含人物档案、来源索引、人物蒸馏、证据 `JSON` 与稳定封面副本。
+- Target: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 姜胡说/`
+- Imported/recorded: 2026-06-12
+- Last checked: 2026-06-12
+- Files: 2 Markdown files + 2 JSON files + 1 JPG asset。
+- Notes: 由 `scripts/fetch_wechat_channels_source.py` 与 `scripts/creator_dossier.py` 串联生成；当前发布时间精度为 `exact`，但本地视频文件仍缺失。
+
 
 ### 用户手动记录 | AI 工具导航与信息源收藏
 
@@ -199,6 +244,11 @@
 | `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-root-readme.md` | 5097 | 107 | `8b47cb5a7117c31b06b24234001361e55d4c10c4fcc73939665d7e80cde182dc` |
 | `raw/A_AI-Agent-Tech-Stack/P_Pi/2026-05-30-pi-skills.md` | 7287 | 249 | `edac88d72e7d2596213eda4a1fb96cc80cb295589135c99c742024af21b9393c` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 2B大叔.md` | 1102 | 19 | `23dbe3c85315aea82242eeac86b28d27d6befa7ac0065d54f2b5aeac96f48d1a` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 姜胡说.md` | 2629 | 54 | `15cab3d8c5a210386a503a0932040d752db24c8e100f9c416c8ae224f5c90dba` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 姜胡说/来源索引.md` | 777 | 29 | `2778645e007c139d079b48de2b916acb304b10344cedddf8a5ea625ebd59fcf9` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 姜胡说/人物蒸馏.md` | 4891 | 104 | `92b0b7d7cac3796cf7047bd2974eb0db6a004e77b6a4b38cfe673ea1b3993a92` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 姜胡说/档案.json` | 6218 | 56 | `d8c7e5b84d37ccdea5e4ca66edf92159cc25e8572583bfdc02605de0b019444f` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 姜胡说/证据/视频号-AeRWpe7T0D.json` | 3390 | 33 | `1c00c59e1235c695c1475d1b46d846375748b0a6b2832f0b51ce58b49122f368` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - code秘密花园.md` | 440 | 17 | `3b5c82282f1a6b0af9758bd89ee391504a1e72d5f3426b3611f04a9430f16460` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 堂吉诃德拉曼查的英豪.md` | 423 | 17 | `f6fbaa8b3bdf48cb47a06a1fb440e2439e271bfdd09b1437d10c468246930e3d` |
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 慢学AI.md` | 571 | 17 | `e133677b4ed23904b4d77ebb4e7614cbf891508e35111b246e5bc622dc61bc91` |
@@ -212,8 +262,16 @@
 | `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 第四种黑猩猩CHIMP.md` | 593 | 17 | `e334621aed67c3ad44440a39e172b36fd3976fd33661b2e5898a3c6373560ccf` |
 | `raw/A_AI-Gurus(AI大神)/AI 大神 - Andrej Karpathy.md` | 903 | 23 | `f6ecdd47d63dd52ae187c456dbc9485861a7541dbfeb06efb1f3565f7b89271e` |
 | `raw/A_AI-Gurus(AI大神)/AI 大神 - Hung-yi Lee.md` | 622 | 21 | `27dadf1234a26e442446036562b01628921fe582d456a3cc4f1b2aa7173cdb2e` |
-| `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI.md` | 815 | 19 | `b85f7b66996f2a5e185908781be608beaf2cb11129d7d4c3973bcc4b1d5b5734` |
-| `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙.md` | 746 | 19 | `afc1e8b6264441bc277e0f71f02cb882fd7cbab6c2cbcbcbf76ba09e58ddc39a` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI.md` | 919 | 23 | `9941ab34f9331753353d0bec78d0d851e30fe3fc3ad4be11357f829ad00d408a` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI/来源索引.md` | 899 | 29 | `cbfbcf4e1bb67471a70da88e04b0fc5b2ae1d23bf1931e7d6ba0b0b25ed90471` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI/人物蒸馏.md` | 1485 | 42 | `efbb3aab7a5daa9cdcc3a33ac50dd04d5b40198aa2c4ef6573999c8ac5c6badc` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI/档案.json` | 2817 | 56 | `77af5e365e83caba53e0899b146dc9d4e791cb65495f4655026616a481694283` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI/证据/视频号-At1xESEPjT.json` | 1747 | 33 | `09c9527d7242e226f44b48483b807e989d7e43d7ff9e0d1082c52e903de5a181` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙.md` | 845 | 22 | `eae726c3c673230f2d2e695d8815c6d3b97acacd5052fa6e1dd6d1b77fd11454` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙/来源索引.md` | 813 | 29 | `a1532765120a42b8a98e25cc1cb766f0c0c814db4e6462afd4775c856c7fa184` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙/人物蒸馏.md` | 1435 | 43 | `397c353ccb2ae4cb969791b97c09817e3005c6b8a629097939e466495db268e3` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙/档案.json` | 2601 | 56 | `34b0d9c04e3b2ce0845c1dcec5ca9a21e16124a00f9a0691adfd030d4c1a95fe` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙/证据/视频号-AU25W7Em6f.json` | 1602 | 33 | `f2dc71d7825c47d82d1922cbb31fcaf55ab8f5e6b9b6c7d3d05aaee2f18af01b` |
 | `raw/A_Articles(文章)/I_Important-Articles(重量级文章)/LLM Knowledge Bases.md` | 8140 | 81 | `f3d1e1e9ba4dbdc292b5bc57ae58252d1e637184686db40cfb0b8a155c3f361f` |
 | `raw/A_Articles(文章)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 | `raw/A_Assets(素材)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
@@ -225,6 +283,9 @@
 | `raw/P_Papers(论文)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 | `raw/P_Prompts(提示词)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 | `raw/T_Transcripts(转录)/readme.md` | 0 | 0 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| `Clippings/视频号/AeRWpe7T0D_meta.json` | 3178 | 18 | `50589929fa5e64511ec050632e6883331044bed93d37df8ae8105aa67a5fb568` |
+| `Clippings/视频号/AeRWpe7T0D_raw.json` | 3457 | 36 | `56f8178f32a568b0b68768f94841ca5babb99296ea1444bef31f868d4e279bd1` |
+| `Clippings/视频号/第一步_像素级复刻.md` | 2460 | 54 | `0f65dbd86cf09bde5320fc3b4d9b912951406cdcdd30ba461eab98ba4b10801f` |
 
 ## Asset Paths
 
@@ -241,6 +302,11 @@
 | `raw/C_Courses(课程)/T_Tutorials(教程)/如何下载视频号的视频/images/wx_channel_video_003.png` | 70118 | `00b4529d5e81a97658542f4ce16cf2ffdf391fdac25e11559e51d67d89b984c6` |
 | `raw/C_Courses(课程)/T_Tutorials(教程)/如何下载视频号的视频/images/wx_channel_video_004.png` | 275444 | `ff4fbc691c46e4627bd912b44353993312c36cb8fe7207d81f55b1e4a8af764c` |
 | `Clippings/视频号/AU25W7Em6f_cover.jpg` | 44622 | `9ada47eada3ae97115dd14e93b95f186a3cdcb545197574b1a8688254739f8c2` |
+| `Clippings/视频号/AeRWpe7T0D_cover.jpg` | 43228 | `09ed7c1d3e1c2b52111044eb8506dc2395d40beaf4e8a2ae3916be9de98c0976` |
+| `Clippings/视频号/At1xESEPjT_cover.jpg` | 58513 | `d968c9116717d98e5e2c538bd2f86252bb3bcb21218d76367b28c95b5bdea223` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI/媒体/At1xESEPjT_cover.jpg` | 58513 | `d968c9116717d98e5e2c538bd2f86252bb3bcb21218d76367b28c95b5bdea223` |
+| `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙/媒体/AU25W7Em6f_cover.jpg` | 44622 | `9ada47eada3ae97115dd14e93b95f186a3cdcb545197574b1a8688254739f8c2` |
+| `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 姜胡说/媒体/AeRWpe7T0D_cover.jpg` | 43228 | `09ed7c1d3e1c2b52111044eb8506dc2395d40beaf4e8a2ae3916be9de98c0976` |
 | `raw/A_Assets(素材)/A_Avatar/B站_第四种黑猩猩CHIMP.png` | 164695 | `5e5d1b69d62baff1262f521ab2333d14e5d127732d4b817112e6304a852bca51` |
 | `raw/A_Assets(素材)/L_LLM-Wiki/llm-wiki-workflow.svg` | 6516 | `44e7e2124d0c88dfe14b7b7026e81ec19aa1580b5bdfa877abded21195a3799f` |
 | `raw/A_Assets(素材)/O_OpenSpec/openspec-01-cover.png` | 2258314 | `e4ac5c376403b645935a4e31bc48fb92141954551c9b8cdf92d55ce752a8c242` |
@@ -262,3 +328,6 @@
 |---|---:|---:|---|
 | `Clippings/视频号/AU25W7Em6f_meta.json` | 966 | 9 | `5cabdb30a140747b76c6e87642d9af65249c0fefcabaa9a325b0b7f21ad77e5c` |
 | `Clippings/视频号/你以为的“贩卖焦虑”只是你没见过的“世界常识”贩卖焦虑.md` | 598 | 19 | `f0789113afc64adf6f41567017d050deaeaf14de402f5a36a2477890623363b3` |
+| `Clippings/视频号/At1xESEPjT_meta.json` | 1551 | 18 | `e36d77de537032ccda7d78d3ae515893c8572a4e6649af167cd11bbe5c365540` |
+| `Clippings/视频号/At1xESEPjT_raw.json` | 1651 | 33 | `890d768df2aae14205e7be296880156d4ee24dd6a53ed22fadfcaba582c36d76` |
+| `Clippings/视频号/AI黑客松大赛让人震惊，初中生近乎夺冠，中国版盖茨快出现了#跟傅盛学AI#AI编程#VibeCoding#猎豹移动#黑客马拉松.md` | 874 | 23 | `a783c192f2f3583de9130d398a0c6376bef1236a65bd359dae7fba54ff2bf93c` |

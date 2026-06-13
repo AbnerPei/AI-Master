@@ -1,0 +1,100 @@
+{
+  "created_at": "2026-06-12T12:54:13",
+  "updated_at": "2026-06-12T12:54:13",
+  "platform": "视频号",
+  "seed": {
+    "seed_url": "https://weixin.qq.com/sph/At1xESEPjT",
+    "finder_id": "At1xESEPjT",
+    "seed_title": "AI黑客松大赛让人震惊，初中生近乎夺冠，中国版盖茨快出现了#跟傅盛学AI#AI编程#VibeCoding#猎豹移动#黑客马拉松"
+  },
+  "creator": {
+    "name": "傅盛讲AI",
+    "avatar_url": "https://wx.qlogo.cn/finderhead/ver_1/dFSH0INYic4qNkuZibHDnTp4q5BibbpSOmzBejw1fWhrrKyibbDwANwtt20UyymavYc7lSAk0Mn89icBIEjWnkrAAhkkBSnVdMbtHfav2TOSsFeLTrOg9reoppVjTXSu69CIw/0",
+    "profile_url": "https://channels.weixin.qq.com/finder-preview/pages/sph?id=At1xESEPjT",
+    "platform_creator_id": "",
+    "identity_status": "provisional",
+    "identity_note": "当前公开单条 feed 接口未返回稳定的创作者主键，先以可见名称建立暂存身份。"
+  },
+  "enumeration": {
+    "catalog_status": "partial",
+    "expected_total_known": false,
+    "discovered_count": 1,
+    "queue_state_counts": {
+      "metadata-only": 1
+    },
+    "published_precision_counts": {
+      "exact": 1
+    },
+    "downloaded_video_count": 0,
+    "page_probe": {
+      "status_code": 200,
+      "content_length": 2463,
+      "has_app_root": true,
+      "has_feed_bundle": true,
+      "has_embedded_creator_list": false
+    },
+    "strategy_trace": [
+      {
+        "name": "feed_info_api",
+        "type": "public-response",
+        "status": "success",
+        "priority": 1,
+        "notes": "通过单条 `shortUri` 接口拿到 seed 视频元数据和可见作者名称。"
+      },
+      {
+        "name": "public_seed_page",
+        "type": "public-page",
+        "status": "success",
+        "priority": 2,
+        "notes": "当前公开 seed 页面是前端壳页，未直接内嵌创作者全量内容列表。"
+      },
+      {
+        "name": "public_creator_catalog",
+        "type": "public-catalog",
+        "status": "unavailable",
+        "priority": 3,
+        "notes": "当前公开 seed 页面和单条 feed 接口都没有暴露稳定的创作者全量列表入口或创作者主键。"
+      },
+      {
+        "name": "mac_wechat_automation",
+        "type": "desktop-fallback",
+        "status": "required",
+        "priority": 4,
+        "notes": "若要追求创作者全量遍历，需要在 `Mac WeChat` 中做主页级或列表级自动化，而不是人工逐条点开。"
+      }
+    ],
+    "failure_reasons": [
+      "当前公开 seed 页面仅暴露前端壳页，未直接给出创作者全量内容列表。",
+      "当前公开单条 feed 接口能确认 seed 视频，但未给出稳定的创作者全量枚举主键。"
+    ],
+    "coverage_note": "本次结果只能确认 seed 视频已存在，不代表已拿到该创作者全部视频。",
+    "next_steps": [
+      "继续尝试从后续网页 bundle 或响应里定位创作者主页级接口。",
+      "如果公开路径仍不足，则转入 `Mac WeChat` 主页级自动化遍历。",
+      "对已发现条目逐步补齐本地视频、副标题、转写稿和发布时间复核。"
+    ]
+  },
+  "entries": [
+    {
+      "catalog_key": "视频号:At1xESEPjT",
+      "platform": "视频号",
+      "source_id": "At1xESEPjT",
+      "title": "AI黑客松大赛让人震惊，初中生近乎夺冠，中国版盖茨快出现了#跟傅盛学AI#AI编程#VibeCoding#猎豹移动#黑客马拉松",
+      "description": "AI黑客松大赛让人震惊，初中生近乎夺冠，中国版盖茨快出现了#跟傅盛学AI#AI编程#VibeCoding#猎豹移动#黑客马拉松",
+      "source_url": "https://channels.weixin.qq.com/finder-preview/pages/sph?id=At1xESEPjT",
+      "seed_url": "https://weixin.qq.com/sph/At1xESEPjT",
+      "cover_url": "https://finder.video.qq.com/251/20304/stodownload?encfilekey=rjD5jyTuFrIpZ2ibE8T7YmwgiahniaXswqzzc2qsVqqQjWzesWt6tPiaSgAHoLOlpicqK3yF9CZb5PQpaU9ibDl4IJrRBJG3N5Gt19RHlpEa1oYXUt1sLK2VM1qA&token=Cvvj5Ix3eewIL2QHboXicE7HZrpYMjdd1VCYuPS1qcDnqXoeExS5RKHPp6erib3icJE97oGD3micicibe0973wKUsvaVFZw7x4STOpnsyVmDSB0dkLtKPqLoIx0QXvicnTTXHmoDRZk9oKfJG0OmTK3P43IoPDqvEZHOMj99SMjUCcLyuguwfeGib67iczAleqma7HTaFh3zqAobfARGJE1bSAPn8ibicaHWBZnpBib0dEYicAN4gibjs&hy=SH&idx=1&m=&scene=2&uzid=1&wxampicformat=503&picformat=200",
+      "published_at": "2026-01-28T17:11:33+08:00",
+      "published_date": "2026-01-28",
+      "published_value": "2026-01-28T17:11:33+08:00",
+      "published_precision": "exact",
+      "published_source": "feedInfo.createtime",
+      "discovery_strategy": "feed_info_api",
+      "discovery_source": "shortUri",
+      "queue_status": "metadata-only",
+      "download_status": "missing",
+      "download_note": "当前仅确认到 seed 视频元数据；本地视频与创作者全量列表需后续补采。",
+      "review_required": true
+    }
+  ]
+}

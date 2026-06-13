@@ -1,0 +1,115 @@
+{
+  "created_at": "2026-06-12T13:03:08",
+  "updated_at": "2026-06-12T13:03:08",
+  "platform": "视频号",
+  "seed": {
+    "seed_url": "https://weixin.qq.com/sph/AeRWpe7T0D",
+    "finder_id": "AeRWpe7T0D",
+    "seed_title": "第一步:像素级复刻"
+  },
+  "creator": {
+    "name": "姜胡说",
+    "avatar_url": "https://wx.qlogo.cn/finderhead/ver_1/ibCB2CrZZsuO0WCVSdBXLqveVE6dRjrzsLUkOts2Mppqhfk1Kd6F7UTDYlpyj9G4DbvMFVY2888stwjWe2IAoVLJ3ah6tHggtzGTcMAtMwiagwETwgrTVOtwuiachSV9Licic/0",
+    "profile_url": "https://channels.weixin.qq.com/finder-preview/pages/sph?id=AeRWpe7T0D",
+    "platform_creator_id": "",
+    "identity_status": "provisional",
+    "identity_note": "当前公开单条 feed 接口未返回稳定的创作者主键，先以可见名称建立暂存身份。"
+  },
+  "enumeration": {
+    "catalog_status": "partial",
+    "expected_total_known": false,
+    "discovered_count": 1,
+    "queue_state_counts": {
+      "metadata-only": 1
+    },
+    "published_precision_counts": {
+      "exact": 1
+    },
+    "downloaded_video_count": 0,
+    "page_probe": {
+      "status_code": 200,
+      "content_length": 2463,
+      "has_app_root": true,
+      "has_feed_bundle": true,
+      "has_embedded_creator_list": false
+    },
+    "local_api_status": {
+      "channels": {
+        "available": false
+      },
+      "version": "260607"
+    },
+    "strategy_trace": [
+      {
+        "name": "feed_info_api",
+        "type": "public-response",
+        "status": "success",
+        "priority": 1,
+        "notes": "通过单条 `shortUri` 接口拿到 seed 视频元数据和可见作者名称。"
+      },
+      {
+        "name": "public_seed_page",
+        "type": "public-page",
+        "status": "success",
+        "priority": 2,
+        "notes": "当前公开 seed 页面是前端壳页，未直接内嵌创作者全量内容列表。"
+      },
+      {
+        "name": "public_creator_catalog",
+        "type": "public-catalog",
+        "status": "unavailable",
+        "priority": 3,
+        "notes": "当前公开 seed 页面和单条 feed 接口都没有暴露稳定的创作者全量列表入口或创作者主键。"
+      },
+      {
+        "name": "wx_channels_download_local_api",
+        "type": "desktop-bridge",
+        "status": "waiting",
+        "priority": 4,
+        "notes": "本地 `wx_channels_download` 服务已启动，但 `channels.available=false`；通常说明 `WeChat` 尚未打开视频号页、前端注入未建立，或桌面 `WeChat` 处于锁定状态。"
+      },
+      {
+        "name": "mac_wechat_automation",
+        "type": "desktop-fallback",
+        "status": "required",
+        "priority": 5,
+        "notes": "若要追求创作者全量遍历，需要在 `Mac WeChat` 中做主页级或列表级自动化，而不是人工逐条点开。"
+      }
+    ],
+    "failure_reasons": [
+      "当前公开 seed 页面仅暴露前端壳页，未直接给出创作者全量内容列表。",
+      "当前公开单条 feed 接口能确认 seed 视频，但未给出稳定的创作者全量枚举主键。",
+      "本地 `wx_channels_download` 服务虽然已启动，但尚未和 `WeChat` 视频号前端建立连接。"
+    ],
+    "coverage_note": "本次结果只能确认 seed 视频已存在，不代表已拿到该创作者全部视频。",
+    "next_steps": [
+      "如果本地 `API` 已启动但 `channels.available=false`，先解锁 `Mac WeChat`，再打开任意视频号页建立前端连接。",
+      "继续尝试从后续网页 bundle 或响应里定位创作者主页级接口。",
+      "如果公开路径仍不足，则转入 `Mac WeChat` 主页级自动化遍历。",
+      "对已发现条目逐步补齐本地视频、副标题、转写稿和发布时间复核。"
+    ]
+  },
+  "entries": [
+    {
+      "catalog_key": "视频号:AeRWpe7T0D",
+      "platform": "视频号",
+      "source_id": "AeRWpe7T0D",
+      "title": "第一步:像素级复刻",
+      "description": "第一步:像素级复刻\n刚开始别想着创新,先学别人怎么做。\n怎么学?\n找一个离你近的人学。不要学马云、乔布斯这些大佬,学你身边做得好的同事或朋友。\n把他的东西都找来看:公众号、视频、书。重点看他反复说的内容。他常说的,才是最重要的方法。\n\n具体怎么做: \n找出他反复讲的重点,用笔圈出来\n看这些重点之间有什么联系\n用图画出来,试着讲给别人听\n在实际工作中用一用,看管不管用\n学的是做事的方法和思路,不是照抄内容。\n\n第二步:像小强一样顽强\n普通人起步时什么都没有。但你有三样武器：敢干 × 坚持 × 公开分享\n01. 先开始再说\n做得不好也要开始,总比不开始强。反正时间多,多试几次也不亏。东西粗糙点反而显得真实。\n02. 用时间、次数换成功\n不会技巧没关系,多做几次总能成。成功 = 每次做的质量 × 做的次数。\n03. 把经历变财富 \n经历过的困难都会变成你的经验。边做边学,学了马上用。做完比做好重要得多。\n\n第三步:构建资产\n别问“公司没我咋办”，要问“我没公司咋办”。\n01. 借“假”修“真” (Mindset)\n把公司当成你的天使投资人打工的目标不是月薪，而是能力。\n02. 能力产品化 (Action)\n从“解决问题”升级为“封装方案”。把一次性劳动，封装成可复制的产品。 不要卖时间（打工思维），要卖产品（创业思维）。\n03. 资产分离定律 (Validation)\n✅ 剥离平台：拿掉大厂Title，还有人认你吗？ ✅ 剥离时间：不去办公室坐班，还有收入进账吗？ ✅ 剥离交付：不需要你在现场，问题能解决吗？ “创业不是一次冒险的跳跃， 而是一次蓄谋已久的跃迁。”\n\n#姜胡说 #逆袭 #创业 #赚钱 #方法",
+      "source_url": "https://channels.weixin.qq.com/finder-preview/pages/sph?id=AeRWpe7T0D",
+      "seed_url": "https://weixin.qq.com/sph/AeRWpe7T0D",
+      "cover_url": "https://finder.video.qq.com/251/20304/stodownload?encfilekey=rjD5jyTuFrIpZ2ibE8T7YmwgiahniaXswqzT2N6vQQjR3zibFQQNeq36hCGm53gMfUicGNtvOicgtJoQPibrt7T6p5xnM79vpIXiaibJCMMibrU4JIxlbxa4tSibWINAQ&token=Cvvj5Ix3eewIL2QHboXicE6XzvLp1FNqBUoMicsgoXoc2FNRbSIwF3qcfpebxfGmEaJJibfHcQmHbBBQb6NXianUrVtgNEOmnZMXcluHjttwvN6YtHDcib65ic3M4auTSLK5uiaY0EY7bkAxE5Rcwkpgia6vNmZM8qrvtaC6SRibvuiaNP7AicBEevV8wHmS4QaLUyfF2QqOSzmNCPnqsruDrKOaUnkZmf8ENLOibhvlGCjzmEyOJnY&hy=SH&idx=1&m=&scene=2&uzid=1&wxampicformat=503&picformat=200",
+      "published_at": "2026-01-01T22:44:42+08:00",
+      "published_date": "2026-01-01",
+      "published_value": "2026-01-01T22:44:42+08:00",
+      "published_precision": "exact",
+      "published_source": "feedInfo.createtime",
+      "discovery_strategy": "feed_info_api",
+      "discovery_source": "shortUri",
+      "queue_status": "metadata-only",
+      "download_status": "missing",
+      "download_note": "当前仅确认到 seed 视频元数据；本地视频与创作者全量列表需后续补采。",
+      "review_required": true
+    }
+  ]
+}

@@ -12,6 +12,31 @@
 
 > When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
 
+## [2026-06-12] ingest | 补充视频号 AI 大神傅盛讲AI来源与人物档案
+- Added clipping files: `Clippings/视频号/At1xESEPjT_meta.json`、`Clippings/视频号/At1xESEPjT_raw.json`、`Clippings/视频号/At1xESEPjT_cover.jpg`、`Clippings/视频号/AI黑客松大赛让人震惊，初中生近乎夺冠，中国版盖茨快出现了#跟傅盛学AI#AI编程#VibeCoding#猎豹移动#黑客马拉松.md`。
+- Added clipping catalog: `Clippings/视频号/At1xESEPjT_catalog.json`、`Clippings/视频号/傅盛讲AI_内容枚举.md`。
+- Updated raw file: `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI.md`，补充 `资料索引` 链接到档案目录。
+- Added raw dossier sample: `raw/A_AI-Gurus(AI大神)/AI 大神 - 傅盛讲AI/`，包含 `来源索引.md`、`人物蒸馏.md`、`档案.json`、`证据/视频号-At1xESEPjT.json` 和稳定封面副本。
+- Added generated skill: `raw/A_Tools(工具)/skills/generated/傅盛讲AI/`，包含 `SKILL.md`、`参考资料索引.md` 和 `skill-manifest.json`。
+- Updated: `raw/source-manifest.md`。
+- Notes: 公开视频来源已拿到精确发布时间 `2026-01-28T17:11:33+08:00`；当前创作者全量枚举状态仍为 `partial`，本地视频文件仍缺失。
+
+## [2026-06-12] create | 新增 `视频号` 人物蒸馏工作流与李尚龙样本
+- Added script: `scripts/creator_dossier.py`，用于把单条来源接入为“人物主档 + 来源索引 + 人物蒸馏 + 证据记录”结构。
+- Added raw dossier sample: `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙/`，包含 `来源索引.md`、`人物蒸馏.md`、`档案.json`、`证据/视频号-AU25W7Em6f.json` 和稳定封面副本。
+- Updated raw file: `raw/A_AI-Gurus(AI大神)/AI 大神 - 李尚龙.md`，补充 `资料索引` 链接到样本目录。
+- Created wiki page: `wiki/P_Playbooks(操作手册)/视频号人物蒸馏工作流.md`。
+- Updated: `wiki/index.md`、`raw/source-manifest.md`、`openspec/changes/organize-wechat-channels-creator-videos/tasks.md`。
+- Notes: 当前样本已明确记录本地视频缺失与发布时间精度为 `unknown`；后续可在补齐本地视频文件和发布时间后增量更新同一人物档案。
+
+## [2026-06-12] ingest | 新增视频号创作者姜胡说来源与人物档案
+- Added script: `scripts/fetch_wechat_channels_source.py`，用于从 `视频号` 单条来源生成 `Clippings` 元数据、原始接口响应、封面和剪藏 `Markdown`。
+- Added clipping files: `Clippings/视频号/AeRWpe7T0D_meta.json`、`Clippings/视频号/AeRWpe7T0D_raw.json`、`Clippings/视频号/AeRWpe7T0D_cover.jpg`、`Clippings/视频号/第一步_像素级复刻.md`。
+- Added raw file: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 姜胡说.md`。
+- Added raw dossier sample: `raw/A_AI-Content-Creator(AI 创作者)/AI 创作者 - 姜胡说/`，包含 `来源索引.md`、`人物蒸馏.md`、`档案.json`、`证据/视频号-AeRWpe7T0D.json` 和稳定封面副本。
+- Updated: `wiki/P_Playbooks(操作手册)/视频号人物蒸馏工作流.md`、`raw/source-manifest.md`。
+- Notes: 当前按默认假设归类为 `AI 创作者` 且星级为 `4`；公开视频来源已拿到精确发布时间 `2026-01-01T22:44:42+08:00`，但本地视频文件仍缺失。
+
 ## [2026-05-22] ingest | 补充 YouTube AI 大神 Hung-yi Lee 资料
 - Added raw file: `raw/A_AI-Gurus(AI大神)/AI 大神 - Hung-yi Lee.md`。
 - Source: YouTube 频道 `https://www.youtube.com/@HungyiLeeNTU`，平台识别为 `YouTube`。

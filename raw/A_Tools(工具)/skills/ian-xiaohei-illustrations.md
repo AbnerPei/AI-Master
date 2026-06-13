@@ -69,9 +69,12 @@ tags:
 python3 /Users/peijianbo/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo helloianneo/ian-xiaohei-illustrations --path ian-xiaohei-illustrations
 ```
 
-当前机器上我已经装过一份，路径是：
+这次我已经重新用安装脚本从上游仓库导入到临时目录做过校验；当前机器上的本地副本与上游内容一致。
+
+当前机器上可用的本地路径有两处：
 
 - `/Users/peijianbo/.codex/skills/ian-xiaohei-illustrations`
+- `/Users/peijianbo/.agents/skills/ian-xiaohei-illustrations`
 
 ## 使用时要注意
 
@@ -95,3 +98,4 @@ python3 /Users/peijianbo/.codex/skills/.system/skill-installer/scripts/install-s
 ## 源路径
 
 - `/Users/peijianbo/.codex/skills/ian-xiaohei-illustrations/SKILL.md`
+- `/Users/peijianbo/.agents/skills/ian-xiaohei-illustrations/SKILL.md`

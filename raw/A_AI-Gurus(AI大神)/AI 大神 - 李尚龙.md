@@ -17,3 +17,6 @@ author_url: https://wx.qlogo.cn/finderhead/ver_1/2ADMibnTdOFAxYreKFsibEejOGDLmVG
 
 ### 平台
 - [**视频号**](https://channels.weixin.qq.com/finder-preview/pages/sph?id=AU25W7Em6f)
+### 资料索引
+- [[AI 大神 - 李尚龙/来源索引]]
+- [[AI 大神 - 李尚龙/人物蒸馏]]
